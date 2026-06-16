@@ -3,7 +3,7 @@ import { CheckCircle2, FileDown, Eye, HelpCircle, ArrowRight, BookOpen, Factory,
 
 export const metadata = {
   title: 'Mes Réalisations & Cas d’Usage Industriels',
-  description: 'Explorez mes projets réels et prototypes d’ingénierie et de développement : Suivi Pédagogique BTS, GMAO Pro, Supervision Modbus Relais F650 (Poste PSF).',
+  description: 'Explorez mes projets réels et prototypes d’ingénierie et de développement : Suivi Pédagogique BTS, GMAO Pro, Supervision Modbus Relais F650 (Poste PSF), et Training Monitor (Sport/IoT).',
 }
 
 export default function RealisationsPage() {
@@ -417,6 +417,73 @@ export default function RealisationsPage() {
                 />
               </div>
               <h4 className="font-bold text-white text-[11px] px-1">Plan de Zone — 5 Hectares (Postes PSF)</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* CASE STUDY 5: TRAINING MONITOR - HOME TRAINER */}
+      <div className="glass-panel rounded-2xl p-6 md:p-8 space-y-8 border-indigo-500/10">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-white/5 pb-6 gap-4">
+          <div className="space-y-1">
+            <div className="inline-flex items-center space-x-2 px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-400 text-[10px] font-semibold uppercase tracking-wider">
+              <Laptop className="h-3.5 w-3.5 mr-1" />
+              <span>Secteur : IoT / Sport & Santé (Home Trainer)</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+              Training Monitor — Suivi d'Entraînement & Estimation de Puissance
+            </h2>
+          </div>
+          
+          <span className="text-[10px] bg-white/5 text-gray-400 border border-white/10 px-2.5 py-1 rounded-full flex items-center font-semibold">
+            <HelpCircle className="h-3.5 w-3.5 mr-1" /> Prototype d'Ingénierie
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-5 space-y-4 text-sm text-gray-300 leading-relaxed">
+            <p>
+              Solution logicielle d'entraînement cycliste connectée (Home Trainer) permettant de s'affranchir de capteurs de puissance physiques onéreux. L'application intègre et synchronise les données provenant de capteurs standards (Fréquence Cardiaque, Cadence, Vitesse) pour estimer la puissance (W) en temps réel.
+            </p>
+            <div className="bg-[#0d1746] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
+              <span className="font-bold text-white block">Points d'intégration :</span>
+              <ul className="space-y-1.5 text-gray-400">
+                <li>• Scanner et connexion de capteurs Bluetooth / ANT+.</li>
+                <li>• Algorithme d'estimation de puissance instantanée en Watts (W).</li>
+                <li>• Calcul des indicateurs d'effort : IF (Intensity Factor), TSS, Zones de Puissance (Z1 à Z5) et ratio W/kg.</li>
+                <li>• Mode simulation intégré pour valider les séances d'entraînement sans capteurs physiques.</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {['IoT & Sport', 'Estimation de Puissance', 'BLE / ANT+', 'Dashboard Temps Réel', 'Algorithmes'].map((tag) => (
+                <span key={tag} className="text-[10px] bg-[#192556] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
+                <img
+                  src="/images/training_monitor_1.png"
+                  alt="Training Monitor - Connexion Capteurs"
+                  className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
+                />
+              </div>
+              <h4 className="font-bold text-white text-[11px] px-1">Connexion des Capteurs & Initialisation</h4>
+            </div>
+
+            <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
+                <img
+                  src="/images/training_monitor_2.png"
+                  alt="Training Monitor - Séance Active"
+                  className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
+                />
+              </div>
+              <h4 className="font-bold text-white text-[11px] px-1">Séance Active & Analyse de Puissance</h4>
             </div>
           </div>
         </div>
