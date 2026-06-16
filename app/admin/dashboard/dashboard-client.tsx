@@ -77,15 +77,15 @@ export default function DashboardClient({ initialLeads }: DashboardClientProps) 
   return (
     <div className="space-y-8">
       {errorMsg && (
-        <div className="flex items-center space-x-2 p-4 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-300 text-xs">
-          <AlertTriangle className="h-4.5 w-4.5" />
+        <div className="flex items-center space-x-2 p-4 rounded-lg bg-rose-50 border border-rose-200 text-rose-800 text-xs">
+          <AlertTriangle className="h-4.5 w-4.5 text-rose-600" />
           <span>{errorMsg}</span>
         </div>
       )}
 
       {updatingId && (
-        <div className="fixed top-4 right-4 z-50 flex items-center space-x-2 bg-[#101944] border border-cyan-500/20 text-cyan-400 px-4 py-2.5 rounded-lg shadow-xl text-xs">
-          <Loader2 className="h-4 w-4 animate-spin text-cyan-500" />
+        <div className="fixed top-4 right-4 z-50 flex items-center space-x-2 bg-white border border-[#002FA7]/20 text-[#002FA7] px-4 py-2.5 rounded-lg shadow-xl text-xs">
+          <Loader2 className="h-4 w-4 animate-spin text-[#002FA7]" />
           <span>Synchronisation Supabase...</span>
         </div>
       )}
@@ -95,7 +95,7 @@ export default function DashboardClient({ initialLeads }: DashboardClientProps) 
 
       {/* Main Leads Table */}
       <div className="space-y-4">
-        <h2 className="text-lg font-bold text-white tracking-tight">Liste des Demandes</h2>
+        <h2 className="text-lg font-bold text-slate-900 tracking-tight">Liste des Demandes</h2>
         <LeadsTable
           leads={leads}
           onUpdateStatus={handleUpdateStatus}

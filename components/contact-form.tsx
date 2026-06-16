@@ -137,17 +137,17 @@ function FormContent() {
   ]
 
   return (
-    <div className="glass-panel rounded-2xl p-6 md:p-8 shadow-xl relative overflow-hidden">
+    <div className="glass-panel rounded-2xl p-6 md:p-8 shadow-xl relative overflow-hidden bg-white">
       {/* Background radial glow */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#002FA7]/5 rounded-full blur-3xl pointer-events-none" />
 
       {status === 'success' && (
         <div className="flex flex-col items-center justify-center text-center py-10 space-y-4 animate-float">
-          <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center">
             <CheckCircle2 className="h-10 w-10" />
           </div>
-          <h3 className="text-2xl font-bold text-white">Demande envoyée !</h3>
-          <p className="text-gray-300 max-w-md text-sm leading-relaxed">
+          <h3 className="text-2xl font-bold text-slate-900">Demande envoyée !</h3>
+          <p className="text-slate-600 max-w-md text-sm leading-relaxed">
             Merci pour votre intérêt. Votre demande a été enregistrée avec succès.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-4 w-full justify-center">
@@ -166,7 +166,7 @@ function FormContent() {
             )}
             <button
               onClick={() => setStatus('idle')}
-              className="px-6 py-2.5 rounded-lg text-xs font-semibold bg-white/5 border border-white/10 hover:bg-white/10 text-white transition-colors"
+              className="px-6 py-2.5 rounded-lg text-xs font-semibold bg-slate-100 border border-slate-200/80 hover:bg-slate-200 text-slate-700 transition-colors"
             >
               Envoyer un autre message
             </button>
@@ -177,7 +177,7 @@ function FormContent() {
       {status !== 'success' && (
         <form onSubmit={handleSubmit} className="space-y-6">
           {status === 'error' && (
-            <div className="flex items-start space-x-3 p-4 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-300 text-sm">
+            <div className="flex items-start space-x-3 p-4 rounded-lg bg-rose-50 border border-rose-200 text-rose-800 text-sm">
               <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5" />
               <span>{errorMessage}</span>
             </div>
@@ -198,7 +198,7 @@ function FormContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Full Name */}
             <div className="space-y-2">
-              <label htmlFor="fullName" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <label htmlFor="fullName" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Nom Complet *
               </label>
               <input
@@ -209,13 +209,13 @@ function FormContent() {
                 onChange={handleInputChange}
                 placeholder="Ex: Youssef Alami"
                 required
-                className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none transition-all duration-200"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 outline-none transition-all duration-200"
               />
             </div>
 
             {/* Email */}
             <div className="space-y-2">
-              <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Adresse Email
               </label>
               <input
@@ -225,7 +225,7 @@ function FormContent() {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="Ex: youssef@entreprise.com"
-                className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none transition-all duration-200"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 outline-none transition-all duration-200"
               />
             </div>
           </div>
@@ -233,7 +233,7 @@ function FormContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Phone */}
             <div className="space-y-2">
-              <label htmlFor="phone" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <label htmlFor="phone" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Numéro de Téléphone
               </label>
               <input
@@ -243,13 +243,13 @@ function FormContent() {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="Ex: +212 600 000 000"
-                className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none transition-all duration-200"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 outline-none transition-all duration-200"
               />
             </div>
 
             {/* Company / Sector */}
             <div className="space-y-2">
-              <label htmlFor="company" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <label htmlFor="company" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Entreprise & Secteur
               </label>
               <div className="grid grid-cols-2 gap-3">
@@ -260,7 +260,7 @@ function FormContent() {
                   value={formData.company}
                   onChange={handleInputChange}
                   placeholder="Ex: Innov SARL"
-                  className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none transition-all duration-200"
+                  className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 outline-none transition-all duration-200"
                 />
                 <input
                   type="text"
@@ -269,7 +269,7 @@ function FormContent() {
                   value={formData.sector}
                   onChange={handleInputChange}
                   placeholder="Ex: Industrie / Santé"
-                  className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none transition-all duration-200"
+                  className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 outline-none transition-all duration-200"
                 />
               </div>
             </div>
@@ -278,7 +278,7 @@ function FormContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Service Type */}
             <div className="space-y-2">
-              <label htmlFor="serviceType" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <label htmlFor="serviceType" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Type de besoin *
               </label>
               <select
@@ -287,11 +287,11 @@ function FormContent() {
                 value={formData.serviceType}
                 onChange={handleInputChange}
                 required
-                className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-3 text-sm text-white outline-none transition-all duration-200"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-3 text-sm text-slate-900 outline-none transition-all duration-200"
               >
-                <option value="" disabled className="bg-[#0b0f19]">--- Sélectionnez une option ---</option>
+                <option value="" disabled className="bg-white text-slate-900">--- Sélectionnez une option ---</option>
                 {serviceOptions.map((opt) => (
-                  <option key={opt.value} value={opt.value} className="bg-[#0b0f19]">
+                  <option key={opt.value} value={opt.value} className="bg-white text-slate-900">
                     {opt.label}
                   </option>
                 ))}
@@ -300,17 +300,17 @@ function FormContent() {
 
             {/* Preferred Contact Method */}
             <div className="space-y-2">
-              <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Canal de contact préféré
               </label>
               <div className="grid grid-cols-3 gap-3 h-[46px]">
                 {['email', 'whatsapp', 'phone'].map((channel) => (
                   <label
                     key={channel}
-                    className={`flex items-center justify-center rounded-lg border text-xs font-medium cursor-pointer transition-all duration-200 capitalize ${
+                    className={`flex items-center justify-center rounded-lg border text-xs font-semibold cursor-pointer transition-all duration-200 capitalize ${
                       formData.preferredContact === channel
-                        ? 'bg-cyan-500/10 border-cyan-500 text-cyan-400'
-                        : 'border-white/10 bg-[#050b14]/60 text-gray-400 hover:text-white'
+                        ? 'bg-[#002FA7]/10 border-[#002FA7] text-[#002FA7]'
+                        : 'border-slate-200 bg-slate-50 text-slate-500 hover:text-slate-800'
                     }`}
                   >
                     <input
@@ -330,7 +330,7 @@ function FormContent() {
 
           {/* Budget Range selection */}
           <div className="space-y-2.5">
-            <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+            <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
               Budget Approximatif
             </label>
             <div className="flex flex-wrap gap-2.5">
@@ -339,10 +339,10 @@ function FormContent() {
                   key={range}
                   type="button"
                   onClick={() => handleSelectBudget(range)}
-                  className={`px-4 py-2 rounded-lg border text-xs font-medium transition-all duration-200 ${
+                  className={`px-4 py-2 rounded-lg border text-xs font-semibold transition-all duration-200 ${
                     formData.budgetRange === range
-                      ? 'bg-cyan-500/10 border-cyan-500 text-cyan-400 shadow-md'
-                      : 'border-white/5 bg-[#050b14]/40 text-gray-400 hover:text-white hover:border-white/15'
+                      ? 'bg-[#002FA7]/10 border-[#002FA7] text-[#002FA7] shadow-md shadow-[#002FA7]/5'
+                      : 'border-slate-200 bg-slate-50 text-slate-600 hover:text-slate-800 hover:border-slate-300'
                   }`}
                 >
                   {range}
@@ -353,7 +353,7 @@ function FormContent() {
 
           {/* Message */}
           <div className="space-y-2">
-            <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+            <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
               Description de votre projet *
             </label>
             <textarea
@@ -364,7 +364,7 @@ function FormContent() {
               onChange={handleInputChange}
               required
               placeholder="Décrivez votre besoin métier, vos objectifs et vos contraintes techniques..."
-              className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none transition-all duration-200 resize-y"
+              className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 outline-none transition-all duration-200 resize-y"
             />
           </div>
 
@@ -372,7 +372,7 @@ function FormContent() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/20 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            className="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-[#002FA7] to-[#D95D39] hover:from-[#002FA7]/90 hover:to-[#D95D39]/90 shadow-lg shadow-[#002FA7]/15 hover:shadow-[#002FA7]/25 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
           >
             {loading ? (
               <>
@@ -395,8 +395,8 @@ function FormContent() {
 export default function ContactForm() {
   return (
     <Suspense fallback={
-      <div className="glass-panel rounded-2xl p-8 flex items-center justify-center min-h-[400px]">
-        <Loader2 className="h-8 w-8 animate-spin text-cyan-500" />
+      <div className="glass-panel rounded-2xl p-8 flex items-center justify-center min-h-[400px] bg-white">
+        <Loader2 className="h-8 w-8 animate-spin text-[#002FA7]" />
       </div>
     }>
       <FormContent />

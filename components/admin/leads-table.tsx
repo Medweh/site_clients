@@ -34,12 +34,12 @@ const STATUS_LABELS: Record<string, string> = {
 }
 
 const STATUS_COLORS: Record<string, string> = {
-  new: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
-  contacted: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
-  in_discussion: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-  quote_sent: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
-  won: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-  lost: 'bg-rose-500/10 text-rose-400 border-rose-500/20',
+  new: 'bg-[#002FA7]/10 text-[#002FA7] border-[#002FA7]/20',
+  contacted: 'bg-blue-50 text-blue-600 border-blue-200',
+  in_discussion: 'bg-[#D95D39]/10 text-[#D95D39] border-[#D95D39]/20',
+  quote_sent: 'bg-indigo-50 text-indigo-600 border-indigo-200',
+  won: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  lost: 'bg-rose-50 text-rose-700 border-rose-200',
 }
 
 const SERVICE_LABELS: Record<string, string> = {
@@ -99,27 +99,27 @@ export default function LeadsTable({ leads, onUpdateStatus, onDeleteLead }: Lead
       <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
         {/* Search Input */}
         <div className="relative w-full sm:max-w-xs">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
           <input
             type="text"
             placeholder="Rechercher un lead..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg pl-10 pr-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none transition-all duration-200"
+            className="w-full bg-white border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg pl-10 pr-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 outline-none transition-all duration-200 shadow-sm"
           />
         </div>
 
         {/* Status Filter */}
         <div className="flex items-center space-x-2 w-full sm:w-auto">
-          <Filter className="h-4 w-4 text-gray-500 shrink-0" />
+          <Filter className="h-4 w-4 text-slate-400 shrink-0" />
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
-            className="w-full sm:w-auto bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-2 text-xs text-white outline-none transition-all duration-200"
+            className="w-full sm:w-auto bg-white border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg px-4 py-2 text-xs text-slate-700 outline-none transition-all duration-200 shadow-sm"
           >
-            <option value="all" className="bg-[#0b0f19]">Tous les statuts</option>
+            <option value="all" className="bg-white text-slate-700">Tous les statuts</option>
             {Object.entries(STATUS_LABELS).map(([val, label]) => (
-              <option key={val} value={val} className="bg-[#0b0f19]">
+              <option key={val} value={val} className="bg-white text-slate-700">
                 {label}
               </option>
             ))}
@@ -128,11 +128,11 @@ export default function LeadsTable({ leads, onUpdateStatus, onDeleteLead }: Lead
       </div>
 
       {/* Table Container */}
-      <div className="glass-panel rounded-2xl border-white/5 overflow-hidden shadow-xl">
+      <div className="glass-panel bg-white/90 rounded-2xl border-slate-200/60 overflow-hidden shadow-md">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse text-xs">
             <thead>
-              <tr className="border-b border-white/5 bg-[#060b13] text-gray-400 font-semibold uppercase tracking-wider">
+              <tr className="border-b border-slate-200/60 bg-slate-50 text-slate-500 font-semibold uppercase tracking-wider">
                 <th className="px-6 py-4">Client / Entreprise</th>
                 <th className="px-6 py-4">Détails Besoin</th>
                 <th className="px-6 py-4">Message</th>
@@ -140,35 +140,35 @@ export default function LeadsTable({ leads, onUpdateStatus, onDeleteLead }: Lead
                 <th className="px-6 py-4 text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-white/5 bg-[#0b0f19]/30">
+            <tbody className="divide-y divide-slate-100 bg-white/50">
               {filteredLeads.length === 0 ? (
                 <tr>
-                  <td colSpan={5} className="px-6 py-10 text-center text-gray-500">
+                  <td colSpan={5} className="px-6 py-10 text-center text-slate-400">
                     Aucune demande trouvée.
                   </td>
                 </tr>
               ) : (
                 filteredLeads.map((lead) => (
-                  <tr key={lead.id} className="hover:bg-white/5 transition-colors">
+                  <tr key={lead.id} className="hover:bg-slate-50/50 transition-colors">
                     {/* Client details */}
                     <td className="px-6 py-4 space-y-1">
-                      <div className="font-bold text-white text-sm">{lead.full_name}</div>
-                      <div className="space-y-0.5 text-gray-400">
+                      <div className="font-bold text-slate-900 text-sm">{lead.full_name}</div>
+                      <div className="space-y-0.5 text-slate-500">
                         {lead.email && (
                           <div className="flex items-center space-x-1.5">
-                            <Mail className="h-3 w-3 text-cyan-500" />
+                            <Mail className="h-3 w-3 text-[#002FA7]" />
                             <span>{lead.email}</span>
                           </div>
                         )}
                         {lead.phone && (
                           <div className="flex items-center space-x-1.5">
-                            <Phone className="h-3 w-3 text-cyan-500" />
+                            <Phone className="h-3 w-3 text-[#002FA7]" />
                             <span>{lead.phone}</span>
                           </div>
                         )}
                         {lead.company && (
                           <div className="flex items-center space-x-1.5">
-                            <Building className="h-3 w-3 text-cyan-500" />
+                            <Building className="h-3 w-3 text-[#002FA7]" />
                             <span>
                               {lead.company} {lead.sector ? `(${lead.sector})` : ''}
                             </span>
@@ -179,24 +179,24 @@ export default function LeadsTable({ leads, onUpdateStatus, onDeleteLead }: Lead
 
                     {/* Service & Budget & Date */}
                     <td className="px-6 py-4 space-y-1">
-                      <span className="inline-block px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-400 font-medium font-mono text-[10px]">
+                      <span className="inline-block px-2.5 py-0.5 rounded bg-[#002FA7]/10 text-[#002FA7] font-semibold font-mono text-[10px]">
                         {SERVICE_LABELS[lead.service_type] || lead.service_type}
                       </span>
                       {lead.budget_range && (
-                        <div className="text-gray-300 font-medium">Budget: {lead.budget_range}</div>
+                        <div className="text-slate-700 font-medium">Budget: {lead.budget_range}</div>
                       )}
-                      <div className="flex items-center space-x-1 text-gray-500 text-[10px]">
+                      <div className="flex items-center space-x-1 text-slate-400 text-[10px]">
                         <Calendar className="h-3 w-3" />
                         <span>{formatDate(lead.created_at)}</span>
                       </div>
-                      <div className="text-[10px] text-gray-400">
-                        Pref. contact : <span className="capitalize text-cyan-400 font-semibold">{lead.preferred_contact || 'Non spécifié'}</span>
+                      <div className="text-[10px] text-slate-500">
+                        Pref. contact : <span className="capitalize text-[#002FA7] font-semibold">{lead.preferred_contact || 'Non spécifié'}</span>
                       </div>
                     </td>
 
                     {/* Message content */}
                     <td className="px-6 py-4 max-w-xs">
-                      <p className="text-gray-300 leading-relaxed break-words line-clamp-3 hover:line-clamp-none transition-all duration-300 cursor-help" title={lead.message}>
+                      <p className="text-slate-600 leading-relaxed break-words line-clamp-3 hover:line-clamp-none transition-all duration-300 cursor-help" title={lead.message}>
                         {lead.message}
                       </p>
                     </td>
@@ -207,17 +207,17 @@ export default function LeadsTable({ leads, onUpdateStatus, onDeleteLead }: Lead
                         <select
                           value={lead.status}
                           onChange={(e) => onUpdateStatus(lead.id, e.target.value)}
-                          className={`appearance-none border rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-cyan-500/30 cursor-pointer pr-8 ${
-                            STATUS_COLORS[lead.status] || 'bg-white/5 text-white border-white/10'
+                          className={`appearance-none border rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-[#002FA7]/20 cursor-pointer pr-8 ${
+                            STATUS_COLORS[lead.status] || 'bg-white text-slate-700 border-slate-200'
                           }`}
                         >
                           {Object.entries(STATUS_LABELS).map(([val, label]) => (
-                            <option key={val} value={val} className="bg-[#0b0f19] text-white">
+                            <option key={val} value={val} className="bg-white text-slate-700">
                               {label}
                             </option>
                           ))}
                         </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-400">
                           <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                           </svg>
@@ -244,7 +244,7 @@ export default function LeadsTable({ leads, onUpdateStatus, onDeleteLead }: Lead
                             }
                           }}
                           title="Supprimer la demande"
-                          className="p-2 rounded bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/20 text-rose-400 transition-colors cursor-pointer"
+                          className="p-2 rounded bg-rose-50 hover:bg-rose-100 border border-rose-200 text-rose-600 transition-colors cursor-pointer"
                         >
                           <Trash2 className="h-4 w-4" />
                         </button>

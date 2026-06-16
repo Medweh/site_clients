@@ -51,12 +51,12 @@ export default function AboutPage() {
   return (
     <div className="relative py-12 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Background glow decorator */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-20 left-10 w-96 h-96 bg-[#002FA7]/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Hero Section About */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
         <div className="lg:col-span-7 space-y-6">
-          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-[#002FA7]/10 border border-[#002FA7]/20 text-[#002FA7] text-xs font-semibold uppercase tracking-wider">
             <span>Cabinet d'Ingénierie Logicielle</span>
           </div>
 
@@ -64,22 +64,22 @@ export default function AboutPage() {
             DigitalService
           </h1>
           
-          <h2 className="text-lg font-bold text-gray-300">
+          <h2 className="text-lg font-bold text-slate-700">
             Des solutions informatiques et industrielles sur mesure pour digitaliser vos processus
           </h2>
 
-          <p className="text-sm text-gray-400 leading-relaxed">
+          <p className="text-sm text-slate-600 leading-relaxed">
             DigitalService combine une double expertise en ingénierie des systèmes physiques et en technologies logicielles modernes. Notre mission est de transformer les processus papier, les tableaux Excel saturés ou les données industrielles isolées en applications simples, connectées et hautement rentables pour votre entreprise.
           </p>
 
-          <p className="text-sm text-gray-400 leading-relaxed">
+          <p className="text-sm text-slate-600 leading-relaxed">
             Nous intervenons sur toute la chaîne de valeur : du capteur physique (via protocole Modbus) jusqu'au tableau de bord cloud interactif accessible sur mobile et PC, en passant par des logiciels métiers dédiés (GMAO, dossiers médicaux, réservations).
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/10 transition-colors cursor-pointer"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-[#002FA7] to-[#D95D39] hover:from-[#002FA7]/90 hover:to-[#D95D39]/90 shadow-lg shadow-[#002FA7]/15 transition-colors cursor-pointer"
             >
               Nous contacter pour un projet
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -89,28 +89,28 @@ export default function AboutPage() {
 
         <div className="lg:col-span-5">
           {/* Visual Avatar Card mockup representing corporate identity */}
-          <div className="glass-panel rounded-2xl p-6 border-white/5 space-y-6 relative overflow-hidden bg-[#0d1746]/60">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl" />
+          <div className="glass-panel rounded-2xl p-6 space-y-6 relative overflow-hidden bg-white">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-[#002FA7]/5 rounded-full blur-xl" />
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-2xl">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-[#002FA7] to-[#D95D39] flex items-center justify-center text-white font-bold text-2xl">
                 DS
               </div>
               <div>
-                <h3 className="font-bold text-white text-lg">DigitalService</h3>
-                <span className="text-xs text-cyan-400 font-mono">Solutions Digitales Premium</span>
+                <h3 className="font-bold text-slate-900 text-lg">DigitalService</h3>
+                <span className="text-xs text-[#002FA7] font-semibold font-mono">Solutions Digitales Premium</span>
               </div>
             </div>
             <div className="space-y-3 pt-2">
-              <div className="flex items-center space-x-3 text-xs text-gray-300">
-                <CheckCircle2 className="h-4.5 w-4.5 text-cyan-500 shrink-0" />
+              <div className="flex items-center space-x-3 text-xs text-slate-700">
+                <CheckCircle2 className="h-4.5 w-4.5 text-[#D95D39] shrink-0" />
                 <span>Expertise Next.js & bases Supabase/PostgreSQL</span>
               </div>
-              <div className="flex items-center space-x-3 text-xs text-gray-300">
-                <CheckCircle2 className="h-4.5 w-4.5 text-cyan-500 shrink-0" />
+              <div className="flex items-center space-x-3 text-xs text-slate-700">
+                <CheckCircle2 className="h-4.5 w-4.5 text-[#D95D39] shrink-0" />
                 <span>Rigueur de modélisation de données complexes</span>
               </div>
-              <div className="flex items-center space-x-3 text-xs text-gray-300">
-                <CheckCircle2 className="h-4.5 w-4.5 text-cyan-500 shrink-0" />
+              <div className="flex items-center space-x-3 text-xs text-slate-700">
+                <CheckCircle2 className="h-4.5 w-4.5 text-[#D95D39] shrink-0" />
                 <span>Supervision de protocoles et automates industriels</span>
               </div>
             </div>
@@ -120,15 +120,15 @@ export default function AboutPage() {
 
       {/* Expertise Details */}
       <div className="space-y-8 mb-20">
-        <h2 className="text-2xl font-bold text-white text-center">Nos Domaines de Compétence</h2>
+        <h2 className="text-2xl font-bold text-slate-900 text-center">Nos Domaines de Compétence</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {experiences.map((exp, idx) => (
-            <div key={idx} className="glass-panel rounded-2xl p-6 space-y-4 bg-[#0d1746]/50">
-              <div className="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center justify-center">
+            <div key={idx} className="glass-panel rounded-2xl p-6 space-y-4 bg-white">
+              <div className="w-10 h-10 rounded-lg bg-[#002FA7]/10 text-[#002FA7] border border-[#002FA7]/20 flex items-center justify-center">
                 <exp.icon className="h-5 w-5" />
               </div>
-              <h3 className="text-base font-bold text-white tracking-tight">{exp.title}</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">{exp.description}</p>
+              <h3 className="text-base font-bold text-slate-900 tracking-tight">{exp.title}</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">{exp.description}</p>
             </div>
           ))}
         </div>
@@ -136,15 +136,15 @@ export default function AboutPage() {
 
       {/* Work Methodology */}
       <div className="space-y-8">
-        <h2 className="text-2xl font-bold text-white text-center">Notre Méthodologie d’Accompagnement</h2>
+        <h2 className="text-2xl font-bold text-slate-900 text-center">Notre Méthodologie d’Accompagnement</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {workflowSteps.map((step, idx) => (
-            <div key={idx} className="glass-panel rounded-xl p-5 border-white/5 space-y-3 bg-[#0d1746]/50">
-              <div className="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-2">
+            <div key={idx} className="glass-panel rounded-xl p-5 space-y-3 bg-white">
+              <div className="w-8 h-8 rounded-lg bg-[#002FA7]/10 text-[#002FA7] flex items-center justify-center mb-2">
                 <step.icon className="h-4.5 w-4.5" />
               </div>
-              <h3 className="font-bold text-white text-sm">{step.title}</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">{step.description}</p>
+              <h3 className="font-bold text-slate-900 text-sm">{step.title}</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

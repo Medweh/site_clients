@@ -75,28 +75,28 @@ export default function AdminLoginPage() {
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center px-4 py-12">
       {/* Background Glow */}
-      <div className="absolute w-72 h-72 rounded-full radial-glow animate-pulse-slow pointer-events-none -z-10" />
+      <div className="absolute w-72 h-72 rounded-full bg-[#002FA7]/5 blur-3xl pointer-events-none -z-10" />
 
       <div className="w-full max-w-md space-y-6">
         <div className="text-center space-y-2">
-          <div className="mx-auto w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500/10 to-blue-600/15 border border-cyan-500/20 text-cyan-400">
+          <div className="mx-auto w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-tr from-[#002FA7]/10 to-[#D95D39]/15 border border-[#002FA7]/20 text-[#002FA7]">
             <Lock className="h-6 w-6" />
           </div>
-          <h1 className="text-2xl font-bold text-white tracking-tight">Espace Administration</h1>
-          <p className="text-xs text-gray-400">Connectez-vous pour accéder au dashboard des leads</p>
+          <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Espace Administration</h1>
+          <p className="text-xs text-slate-500">Connectez-vous pour accéder au dashboard des leads</p>
         </div>
 
-        <div className="glass-panel rounded-2xl p-6 md:p-8 border-white/5 shadow-xl space-y-6">
+        <div className="glass-panel bg-white/95 rounded-2xl p-6 md:p-8 border-slate-200/60 shadow-xl space-y-6">
           {errorMsg && (
-            <div className="flex items-start space-x-2.5 p-3.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-300 text-xs">
-              <AlertCircle className="h-4.5 w-4.5 shrink-0 mt-0.5" />
+            <div className="flex items-start space-x-2.5 p-3.5 rounded-lg bg-rose-50 border border-rose-200 text-rose-800 text-xs">
+              <AlertCircle className="h-4.5 w-4.5 shrink-0 mt-0.5 text-rose-600" />
               <span>{errorMsg}</span>
             </div>
           )}
 
           {resetSent && (
-            <div className="flex items-start space-x-2.5 p-3.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs">
-              <Sparkles className="h-4.5 w-4.5 shrink-0 mt-0.5" />
+            <div className="flex items-start space-x-2.5 p-3.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs">
+              <Sparkles className="h-4.5 w-4.5 shrink-0 mt-0.5 text-emerald-600" />
               <span>Lien de réinitialisation envoyé à {email}. Veuillez consulter votre boîte de réception.</span>
             </div>
           )}
@@ -104,11 +104,11 @@ export default function AdminLoginPage() {
           <form onSubmit={handleLogin} className="space-y-4">
             {/* Email Field */}
             <div className="space-y-1.5">
-              <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Adresse Email
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                   <Mail className="h-4 w-4" />
                 </div>
                 <input
@@ -119,7 +119,7 @@ export default function AdminLoginPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="admin@exemple.com"
                   required
-                  className="w-full bg-[#0b133d]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg pl-10 pr-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none transition-all duration-200"
+                  className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg pl-10 pr-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 outline-none transition-all duration-200"
                 />
               </div>
             </div>
@@ -127,19 +127,19 @@ export default function AdminLoginPage() {
             {/* Password Field */}
             <div className="space-y-1.5">
               <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-xs font-semibold uppercase tracking-wider text-gray-400">
+                <label htmlFor="password" className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
                   Mot de passe
                 </label>
                 <button
                   type="button"
                   onClick={handleForgotPassword}
-                  className="text-[10px] font-semibold text-cyan-400 hover:text-cyan-300 hover:underline outline-none cursor-pointer"
+                  className="text-[10px] font-semibold text-[#002FA7] hover:text-[#002FA7]/80 hover:underline outline-none cursor-pointer"
                 >
                   Mot de passe oublié ?
                 </button>
               </div>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                   <Lock className="h-4 w-4" />
                 </div>
                 <input
@@ -150,7 +150,7 @@ export default function AdminLoginPage() {
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
                   required
-                  className="w-full bg-[#0b133d]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg pl-10 pr-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none transition-all duration-200"
+                  className="w-full bg-slate-50 border border-slate-200 focus:border-[#002FA7] focus:ring-1 focus:ring-[#002FA7]/20 rounded-lg pl-10 pr-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 outline-none transition-all duration-200"
                 />
               </div>
             </div>
@@ -159,7 +159,7 @@ export default function AdminLoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-[#002FA7] to-[#D95D39] hover:from-[#002FA7]/90 hover:to-[#D95D39]/90 shadow-md shadow-[#002FA7]/10 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
               {loading ? (
                 <>

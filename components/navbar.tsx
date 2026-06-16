@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Code2, Cpu, Activity, User, Phone, CheckSquare } from 'lucide-react'
+import { Menu, X, Code2, Cpu, Activity, User, CheckSquare } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export default function Navbar() {
@@ -44,7 +44,7 @@ export default function Navbar() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full',
         scrolled
-          ? 'bg-[#060b24]/85 backdrop-blur-md border-b border-white/5 py-4'
+          ? 'bg-[#FAF8F5]/85 backdrop-blur-md border-b border-slate-200 py-4'
           : 'bg-transparent py-6'
       )}
     >
@@ -52,14 +52,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="relative w-9 h-9 flex items-center justify-center rounded-lg bg-gradient-to-tr from-indigo-500 via-purple-500 to-cyan-500 text-white font-bold shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200">
+            <div className="relative w-9 h-9 flex items-center justify-center rounded-lg bg-gradient-to-tr from-[#002FA7] to-[#D95D39] text-white font-bold shadow-lg shadow-[#002FA7]/10 group-hover:scale-105 transition-transform duration-200">
               DS
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-white text-lg leading-tight tracking-wide group-hover:text-indigo-400 transition-colors duration-200">
+              <span className="font-bold text-slate-800 text-lg leading-tight tracking-wide group-hover:text-[#002FA7] transition-colors duration-200">
                 DigitalService
               </span>
-              <span className="text-[10px] text-gray-400 font-medium uppercase tracking-widest">
+              <span className="text-[10px] text-slate-500 font-medium uppercase tracking-widest">
                 Ingénierie & Solutions Digitales
               </span>
             </div>
@@ -76,8 +76,8 @@ export default function Navbar() {
                   className={cn(
                     'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative',
                     isActive
-                      ? 'text-cyan-400 bg-white/5'
-                      : 'text-gray-300 hover:text-white hover:bg-white/5'
+                      ? 'text-[#002FA7] bg-[#002FA7]/5'
+                      : 'text-slate-600 hover:text-[#002FA7] hover:bg-[#002FA7]/5'
                   )}
                 >
                   {item.name}
@@ -90,7 +90,7 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/20"
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-[#002FA7] to-[#1E40AF] hover:from-[#1E40AF] hover:to-[#002FA7] transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-[#002FA7]/10 hover:shadow-[#002FA7]/20"
             >
               Demander un devis
             </Link>
@@ -101,7 +101,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 focus:outline-none transition-colors"
+              className="inline-flex items-center justify-center p-2 rounded-lg text-slate-500 hover:text-[#002FA7] hover:bg-[#002FA7]/5 focus:outline-none transition-colors"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -114,7 +114,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={cn(
-          'lg:hidden fixed inset-x-0 top-[73px] bottom-0 z-40 bg-[#060b24] border-t border-white/5 px-4 pt-4 pb-6 transition-all duration-300 ease-in-out',
+          'lg:hidden fixed inset-x-0 top-[73px] bottom-0 z-40 bg-[#FAF8F5] border-t border-slate-200 px-4 pt-4 pb-6 transition-all duration-300 ease-in-out',
           isOpen
             ? 'opacity-100 translate-y-0 pointer-events-auto'
             : 'opacity-0 -translate-y-4 pointer-events-none'
@@ -131,11 +131,11 @@ export default function Navbar() {
                 className={cn(
                   'flex items-center space-x-3 px-4 py-3.5 rounded-lg text-base font-medium transition-all duration-200',
                   isActive
-                    ? 'text-cyan-400 bg-white/5'
-                    : 'text-gray-300 hover:text-white hover:bg-white/5'
+                    ? 'text-[#002FA7] bg-[#002FA7]/5'
+                    : 'text-slate-600 hover:text-[#002FA7] hover:bg-[#002FA7]/5'
                 )}
               >
-                <item.icon className="h-5 w-5 text-gray-400" />
+                <item.icon className="h-5 w-5 text-slate-500" />
                 <span>{item.name}</span>
               </Link>
             )
@@ -145,7 +145,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="flex w-full items-center justify-center px-5 py-3 rounded-lg text-base font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/20"
+            className="flex w-full items-center justify-center px-5 py-3 rounded-lg text-base font-semibold text-white bg-gradient-to-r from-[#002FA7] to-[#1E40AF] shadow-lg shadow-[#002FA7]/10 hover:shadow-[#002FA7]/20"
           >
             Demander un devis
           </Link>

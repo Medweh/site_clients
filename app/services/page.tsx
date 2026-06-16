@@ -125,13 +125,13 @@ export default function ServicesPage() {
   return (
     <div className="relative py-12 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Background Radial Glow */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#D95D39]/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="text-center space-y-4 mb-16">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gradient">
           Services & Solutions Digitales
         </h1>
-        <p className="text-gray-400 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
+        <p className="text-slate-600 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
           Je conçois des solutions sur-mesure pour digitaliser vos flux opérationnels, optimiser votre gestion et connecter vos outils industriels.
         </p>
       </div>

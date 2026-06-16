@@ -42,28 +42,28 @@ export default function StatsCards({ leads }: StatsCardsProps) {
       name: 'Total Demandes',
       value: totalLeads,
       icon: Mail,
-      colorClass: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20',
+      colorClass: 'text-[#002FA7] bg-[#002FA7]/10 border-[#002FA7]/20',
       description: 'Total historique des leads',
     },
     {
       name: 'Cette Semaine',
       value: leadsThisWeek,
       icon: Calendar,
-      colorClass: 'text-blue-400 bg-blue-500/10 border-blue-500/20',
+      colorClass: 'text-blue-600 bg-blue-50 border-blue-200',
       description: 'Reçus ces 7 derniers jours',
     },
     {
       name: 'Ce Mois',
       value: leadsThisMonth,
       icon: Clock,
-      colorClass: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20',
+      colorClass: 'text-indigo-600 bg-indigo-50 border-indigo-200',
       description: 'Reçus ces 30 derniers jours',
     },
     {
       name: 'À Traiter (Nouveau)',
       value: newLeads,
       icon: BarChart3,
-      colorClass: 'text-amber-400 bg-amber-500/10 border-amber-500/20',
+      colorClass: 'text-[#D95D39] bg-[#D95D39]/10 border-[#D95D39]/20',
       description: 'Demandes non encore contactées',
     },
   ]
@@ -71,16 +71,16 @@ export default function StatsCards({ leads }: StatsCardsProps) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {stats.map((stat) => (
-        <div key={stat.name} className="glass-panel rounded-2xl p-5 border-white/5 relative overflow-hidden flex flex-col justify-between">
+        <div key={stat.name} className="glass-panel bg-white/70 rounded-2xl p-5 border-slate-200/60 shadow-sm relative overflow-hidden flex flex-col justify-between">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">{stat.name}</span>
+            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{stat.name}</span>
             <div className={`w-9 h-9 rounded-lg flex items-center justify-center border ${stat.colorClass}`}>
               <stat.icon className="h-4.5 w-4.5" />
             </div>
           </div>
           <div className="space-y-1">
-            <span className="text-3xl font-extrabold text-white tracking-tight font-mono">{stat.value}</span>
-            <p className="text-[10px] text-gray-500 font-medium">{stat.description}</p>
+            <span className="text-3xl font-extrabold text-slate-900 tracking-tight font-mono">{stat.value}</span>
+            <p className="text-[10px] text-slate-500 font-medium">{stat.description}</p>
           </div>
         </div>
       ))}
