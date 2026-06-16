@@ -84,7 +84,7 @@ export default function DashboardClient({ initialLeads }: DashboardClientProps) 
       )}
 
       {updatingId && (
-        <div className="fixed top-4 right-4 z-50 flex items-center space-x-2 bg-[#0b0f19] border border-cyan-500/20 text-cyan-400 px-4 py-2.5 rounded-lg shadow-xl text-xs">
+        <div className="fixed top-4 right-4 z-50 flex items-center space-x-2 bg-[#101944] border border-cyan-500/20 text-cyan-400 px-4 py-2.5 rounded-lg shadow-xl text-xs">
           <Loader2 className="h-4 w-4 animate-spin text-cyan-500" />
           <span>Synchronisation Supabase...</span>
         </div>

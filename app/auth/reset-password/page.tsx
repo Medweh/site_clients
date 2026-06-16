@@ -96,7 +96,7 @@ export default function ResetPasswordPage() {
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
                   required
-                  className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none transition-all duration-200"
+                  className="w-full bg-[#0b133d]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none transition-all duration-200"
                 />
               </div>
 
@@ -112,7 +112,7 @@ export default function ResetPasswordPage() {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   placeholder="••••••••"
                   required
-                  className="w-full bg-[#050b14]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none transition-all duration-200"
+                  className="w-full bg-[#0b133d]/60 border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 rounded-lg px-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none transition-all duration-200"
                 />
               </div>
 

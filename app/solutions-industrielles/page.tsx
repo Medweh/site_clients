@@ -139,7 +139,7 @@ def read_sensors():
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 space-y-3 p-3 group">
-            <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+            <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
                 src="/images/relais_f650_3.jpg"
                 alt="Supervision Courbes Relais F650"
@@ -153,7 +153,7 @@ def read_sensors():
           </div>
 
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 space-y-3 p-3 group">
-            <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+            <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
                 src="/images/relais_f650_4.png"
                 alt="Tableau de Registres Modbus Relais F650"
@@ -167,7 +167,7 @@ def read_sensors():
           </div>
 
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 space-y-3 p-3 group">
-            <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+            <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
                 src="/images/relais_f650_1.jpg"
                 alt="Lecture Paramètres Relais F650"
@@ -181,7 +181,7 @@ def read_sensors():
           </div>
 
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 space-y-3 p-3 group">
-            <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+            <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
                 src="/images/relais_f650_2.jpg"
                 alt="Suivi Paramètres en temps réel"

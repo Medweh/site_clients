@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030712;
-  --foreground: #f3f4f6;
-  --muted: #9ca3af;
-  --primary: #6366f1; /* Premium Violet / Indigo */
+  --background: #060b24; /* Deep premium midnight-sapphire */
+  --foreground: #f8fafc;
+  --muted: #94a3b8;
+  --primary: #7c3aed; /* Premium Violet */
   --accent: #06b6d4;  /* Premium Cyan */
-  --card-bg: rgba(10, 15, 30, 0.6);
-  --card-border: rgba(255, 255, 255, 0.05);
+  --card-bg: rgba(13, 23, 70, 0.65); /* Rich sapphire glass */
+  --card-border: rgba(124, 58, 237, 0.25); /* Subtle violet border */
 }
 
 @theme inline {
@@ -21,7 +21,7 @@
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(circle at 50% -20%, #152268 0%, #060b24 65%, #030514 100%);
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: hidden;
@@ -32,14 +32,14 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: #060b24;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f2937;
+  background: #15225c;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #374151;
+  background: #22348a;
 }
 
 /* Glassmorphism Premium Utilities */

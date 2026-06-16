@@ -74,7 +74,7 @@ export default function CabinetMedicalPage() {
         </div>
 
         <div className="space-y-4">
-          <div className="flex justify-between items-center bg-[#0b101c] p-4 rounded-xl border border-white/5">
+          <div className="flex justify-between items-center bg-[#0d1746] p-4 rounded-xl border border-white/5">
             <div>
               <span className="text-xs text-gray-500 uppercase">Patient</span>
               <h4 className="text-base font-bold text-white">Ahmed Mansouri (42 ans)</h4>
@@ -83,11 +83,11 @@ export default function CabinetMedicalPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-[#0b101c] p-4 rounded-xl border border-white/5 space-y-2">
+            <div className="bg-[#0d1746] p-4 rounded-xl border border-white/5 space-y-2">
               <span className="text-xs text-gray-500 uppercase">Dernier Diagnostic (14/05/2026)</span>
               <p className="text-xs text-gray-300">Hypertension artérielle légère. Recommandation d'un régime hyposodé et contrôle sous 3 semaines.</p>
             </div>
-            <div className="bg-[#0b101c] p-4 rounded-xl border border-white/5 space-y-2">
+            <div className="bg-[#0d1746] p-4 rounded-xl border border-white/5 space-y-2">
               <span className="text-xs text-gray-500 uppercase">Traitement Prescrit</span>
               <p className="text-xs text-gray-300 font-mono">1. Amlodipine 5mg (1 comprimé/jour le matin)<br />2. Contrôle de tension hebdomadaire</p>
             </div>

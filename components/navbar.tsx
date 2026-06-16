@@ -43,7 +43,7 @@ export default function Navbar() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full',
         scrolled
-          ? 'bg-[#030712]/85 backdrop-blur-md border-b border-white/5 py-4'
+          ? 'bg-[#060b24]/85 backdrop-blur-md border-b border-white/5 py-4'
           : 'bg-transparent py-6'
       )}
     >
@@ -113,7 +113,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={cn(
-          'lg:hidden fixed inset-x-0 top-[73px] bottom-0 z-40 bg-[#030712] border-t border-white/5 px-4 pt-4 pb-6 transition-all duration-300 ease-in-out',
+          'lg:hidden fixed inset-x-0 top-[73px] bottom-0 z-40 bg-[#060b24] border-t border-white/5 px-4 pt-4 pb-6 transition-all duration-300 ease-in-out',
           isOpen
             ? 'opacity-100 translate-y-0 pointer-events-auto'
             : 'opacity-0 -translate-y-4 pointer-events-none'

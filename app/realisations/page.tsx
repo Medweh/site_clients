@@ -55,7 +55,7 @@ export default function RealisationsPage() {
             <p>
               Développement d'une application hybride (APK Android pour les formateurs et interface Web pour la direction) pour numériser le cahier de texte, le pointage des absences et le suivi individuel d'avancement des étudiants BTS.
             </p>
-            <div className="bg-[#0b101c] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
+            <div className="bg-[#0d1746] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
               <span className="font-bold text-white block">Modules & Fonctionnalités :</span>
               <ul className="space-y-1.5 text-gray-400">
                 <li>• <strong>Cahier de progression :</strong> Remplissage pédagogique en temps réel.</li>
@@ -66,7 +66,7 @@ export default function RealisationsPage() {
             </div>
             <div className="flex flex-wrap gap-1.5">
               {['Android APK', 'Next.js', 'PostgreSQL', 'Supabase Auth', 'PDF Export'].map((tag) => (
-                <span key={tag} className="text-[10px] bg-[#121824] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
+                <span key={tag} className="text-[10px] bg-[#192556] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
                   {tag}
                 </span>
               ))}
@@ -76,7 +76,7 @@ export default function RealisationsPage() {
           {/* Screenshot Gallery grid */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/pedago_emploi.png"
                   alt="Emploi individuel formateur"
@@ -90,7 +90,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/pedago_absences.png"
                   alt="Suivi absences étudiants"
@@ -104,7 +104,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/pedago_dashboard.png"
                   alt="Dashboard APK consultation"
@@ -118,7 +118,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/pedago_login.png"
                   alt="Page connexion APK consultation"
@@ -159,7 +159,7 @@ export default function RealisationsPage() {
             <p>
               Conception d'une application web ergonomique dédiée aux formateurs pour centraliser la saisie des notes scolaires, automatiser le calcul des moyennes pondérées selon les coefficients de contrôle continu (Coeff SS), et sécuriser les saisies par un système de verrouillage.
             </p>
-            <div className="bg-[#0b101c] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
+            <div className="bg-[#0d1746] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
               <span className="font-bold text-white block">Atouts de la Solution :</span>
               <ul className="space-y-1.5 text-gray-400">
                 <li>• <strong>Saisie Intuitive :</strong> Grille de saisie par matière avec calcul instantané de la moyenne de l'étudiant.</li>
@@ -170,7 +170,7 @@ export default function RealisationsPage() {
             </div>
             <div className="flex flex-wrap gap-1.5">
               {['Next.js', 'PostgreSQL', 'Supabase Database', 'Role-Based Auth', 'Arabic Unicode Support'].map((tag) => (
-                <span key={tag} className="text-[10px] bg-[#121824] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
+                <span key={tag} className="text-[10px] bg-[#192556] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
                   {tag}
                 </span>
               ))}
@@ -180,7 +180,7 @@ export default function RealisationsPage() {
           {/* Screenshot Gallery grid */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_login.png"
                   alt="Page d'accueil NotesSav"
@@ -194,7 +194,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_dashboard.png"
                   alt="Mon espace formateur"
@@ -208,7 +208,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_table.png"
                   alt="Saisie des notes"
@@ -222,7 +222,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_admin_dashboard.png"
                   alt="Espace administration"
@@ -236,7 +236,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_consolidation.png"
                   alt="Tableau de consolidation"
@@ -250,7 +250,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_structure.png"
                   alt="Gestion des structures et coefficients"
@@ -264,7 +264,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group sm:col-span-3">
-              <div className="aspect-[16/6] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[16/6] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_pv_pdf.png"
                   alt="Procès-verbal de délibérations"
@@ -303,7 +303,7 @@ export default function RealisationsPage() {
             <p>
               Conception d'une application de GMAO légère et robuste centrée sur l'utilisateur terrain. Évite la lourdeur des ERP d'usines en se concentrant sur les ordres de travail (OT), le planning préventif périodique et le stock de sécurité des pièces de rechange.
             </p>
-            <div className="bg-[#0b101c] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
+            <div className="bg-[#0d1746] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
               <span className="font-bold text-white block">Indicateurs clés historisés :</span>
               <ul className="space-y-1.5 text-gray-400">
                 <li>• calcul de l'efficacité d'exploitation (disponibilité 99.86%).</li>
@@ -313,7 +313,7 @@ export default function RealisationsPage() {
             </div>
             <div className="flex flex-wrap gap-1.5">
               {['WPF / C#', 'Next.js', 'PostgreSQL', 'Python charts', 'PDF Engine'].map((tag) => (
-                <span key={tag} className="text-[10px] bg-[#121824] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
+                <span key={tag} className="text-[10px] bg-[#192556] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
                   {tag}
                 </span>
               ))}
@@ -327,7 +327,7 @@ export default function RealisationsPage() {
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
                 <img
                   src="/images/gmao_dashboard.png"
                   alt="GMAO PRO Dashboard"
@@ -338,7 +338,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
                 <img
                   src="/images/gmao_chart_costs.png"
                   alt="Évolution des coûts de pertes"
@@ -374,7 +374,7 @@ export default function RealisationsPage() {
             <p>
               Solution d'acquisition de mesures physiques en temps réel via protocole Modbus TCP avec les relais GE Multilin F650. L'application extrait les tensions, intensités et puissances du réseau industriel pour surveiller les harmoniques et la consommation globale.
             </p>
-            <div className="bg-[#0b101c] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
+            <div className="bg-[#0d1746] p-4 rounded-xl border border-white/5 space-y-2 text-xs">
               <span className="font-bold text-white block">Points d'intégration :</span>
               <ul className="space-y-1.5 text-gray-400">
                 <li>• Adressage direct holding registers par socket TCP.</li>
@@ -384,7 +384,7 @@ export default function RealisationsPage() {
             </div>
             <div className="flex flex-wrap gap-1.5">
               {['Modbus TCP', 'Relais F650', 'Python Modbus', 'IHM locale', 'OCP Benguerir'].map((tag) => (
-                <span key={tag} className="text-[10px] bg-[#121824] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
+                <span key={tag} className="text-[10px] bg-[#192556] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
                   {tag}
                 </span>
               ))}
@@ -398,7 +398,7 @@ export default function RealisationsPage() {
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
                 <img
                   src="/images/relais_f650_3.jpg"
                   alt="Relais F650 supervision"
@@ -409,7 +409,7 @@ export default function RealisationsPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
-              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5">
+              <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
                 <img
                   src="/images/relais_f650_4.png"
                   alt="Mappage Modbus Relais F650"

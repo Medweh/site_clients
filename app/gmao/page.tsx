@@ -101,7 +101,7 @@ export default function GMAOPage() {
         {/* First section: Dashboard & Reports */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-4 space-y-4 group">
-            <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+            <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
                 src="/images/gmao_dashboard.png"
                 alt="Tableau de Bord GMAO PRO"
@@ -117,7 +117,7 @@ export default function GMAOPage() {
           </div>
 
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-4 space-y-4 group">
-            <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+            <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
                 src="/images/gmao_reports_menu.png"
                 alt="Génération de Rapports PDF GMAO"
@@ -138,7 +138,7 @@ export default function GMAOPage() {
           <h3 className="text-lg font-bold text-white tracking-tight font-mono text-center md:text-left">Exemple de Rapport PDF Généré (Page 1 & 2)</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-4 space-y-4 group">
-              <div className="aspect-[3/4] bg-[#0e1626] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[3/4] bg-[#142260] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/gmao_pdf_page1.png"
                   alt="Rapport PDF Page 1"
@@ -152,7 +152,7 @@ export default function GMAOPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-4 space-y-4 group">
-              <div className="aspect-[3/4] bg-[#0e1626] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+              <div className="aspect-[3/4] bg-[#142260] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/gmao_pdf_page2.png"
                   alt="Rapport PDF Page 2"
@@ -172,7 +172,7 @@ export default function GMAOPage() {
           <h3 className="text-lg font-bold text-white tracking-tight font-mono text-center md:text-left">Courbes Analytiques & Décisionnelles</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-4 space-y-4 group">
-              <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+              <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
                 <img
                   src="/images/gmao_chart_costs.png"
                   alt="Courbe des Coûts de Pertes Cumulés"
@@ -188,7 +188,7 @@ export default function GMAOPage() {
             </div>
 
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-4 space-y-4 group">
-              <div className="aspect-[16/9] bg-[#0b101c] rounded-lg overflow-hidden relative border border-white/5">
+              <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
                 <img
                   src="/images/gmao_chart_downtime.png"
                   alt="Temps d'arrêt mensuel"

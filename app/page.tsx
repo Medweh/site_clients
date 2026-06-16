@@ -84,10 +84,10 @@ export default function Home() {
 
         {/* Floating Mockup Preview Card */}
         <div className="mt-16 md:mt-20 glass-panel rounded-2xl p-2.5 max-w-5xl mx-auto border-white/5 shadow-2xl relative">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent pointer-events-none rounded-2xl" />
-          <div className="bg-[#0b101c]/90 rounded-xl overflow-hidden aspect-[16/9] flex flex-col border border-white/5 relative">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#060b24] via-transparent to-transparent pointer-events-none rounded-2xl" />
+          <div className="bg-[#0d1746]/90 rounded-xl overflow-hidden aspect-[16/9] flex flex-col border border-white/5 relative">
             {/* Header bar */}
-            <div className="h-10 bg-[#060b13] border-b border-white/5 flex items-center px-4 justify-between">
+            <div className="h-10 bg-[#0c1644] border-b border-white/5 flex items-center px-4 justify-between">
               <div className="flex space-x-2">
                 <span className="w-3 h-3 rounded-full bg-rose-500/80" />
                 <span className="w-3 h-3 rounded-full bg-amber-500/80" />
@@ -98,22 +98,22 @@ export default function Home() {
             </div>
             {/* Mock Dashboard Area */}
             <div className="flex-1 p-4 md:p-6 grid grid-cols-3 gap-4 font-sans text-xs">
-              <div className="col-span-3 md:col-span-1 bg-[#0e1626] rounded-lg border border-white/5 p-4 space-y-4">
+              <div className="col-span-3 md:col-span-1 bg-[#142260] rounded-lg border border-white/5 p-4 space-y-4">
                 <div className="text-gray-400 uppercase text-[10px] tracking-wider font-semibold">Statut Équipements</div>
-                <div className="flex justify-between items-center bg-[#131f33] p-2.5 rounded border border-cyan-500/20 text-cyan-400">
+                <div className="flex justify-between items-center bg-[#223594] p-2.5 rounded border border-cyan-500/20 text-cyan-400">
                   <span className="font-medium">Pompe Principale</span>
                   <span className="text-[10px] bg-cyan-500/20 px-2 py-0.5 rounded font-mono">ON / 1450 RPM</span>
                 </div>
-                <div className="flex justify-between items-center bg-[#131f33] p-2.5 rounded border border-emerald-500/10 text-emerald-400">
+                <div className="flex justify-between items-center bg-[#223594] p-2.5 rounded border border-emerald-500/10 text-emerald-400">
                   <span className="font-medium">Vanne D'alimentation</span>
                   <span className="text-[10px] bg-emerald-500/15 px-2 py-0.5 rounded font-mono">OUVERTE (92%)</span>
                 </div>
-                <div className="flex justify-between items-center bg-[#131f33] p-2.5 rounded border border-white/5 text-gray-400">
+                <div className="flex justify-between items-center bg-[#223594] p-2.5 rounded border border-white/5 text-gray-400">
                   <span className="font-medium">Compresseur Secondaire</span>
                   <span className="text-[10px] bg-gray-500/10 px-2 py-0.5 rounded font-mono">VEILLE</span>
                 </div>
               </div>
-              <div className="col-span-3 md:col-span-2 bg-[#0e1626] rounded-lg border border-white/5 p-4 flex flex-col justify-between">
+              <div className="col-span-3 md:col-span-2 bg-[#142260] rounded-lg border border-white/5 p-4 flex flex-col justify-between">
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-gray-400 uppercase text-[10px] tracking-wider font-semibold">Indicateurs de Performance (KPI)</span>
                   <span className="text-emerald-400 text-[10px] bg-emerald-500/10 px-2 py-0.5 rounded font-mono flex items-center">
@@ -127,7 +127,7 @@ export default function Home() {
                   <div className="w-full bg-cyan-500/20 hover:bg-cyan-500/40 transition-colors h-[50%] rounded-t" />
                   <div className="w-full bg-cyan-500/30 hover:bg-cyan-500/50 transition-colors h-[80%] rounded-t" />
                   <div className="w-full bg-gradient-to-t from-cyan-500 to-blue-500 h-[95%] rounded-t relative">
-                    <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-mono text-cyan-400 bg-[#060b13] px-1 py-0.5 rounded border border-cyan-500/30">Max</span>
+                    <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-mono text-cyan-400 bg-[#0c1644] px-1 py-0.5 rounded border border-cyan-500/30">Max</span>
                   </div>
                   <div className="w-full bg-cyan-500/20 hover:bg-cyan-500/40 transition-colors h-[75%] rounded-t" />
                   <div className="w-full bg-cyan-500/20 hover:bg-cyan-500/40 transition-colors h-[85%] rounded-t" />
@@ -148,7 +148,7 @@ export default function Home() {
       </section>
 
       {/* 2. THE PROBLEMS SECTION */}
-      <section className="py-20 border-t border-white/5 bg-[#040815]/50 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 border-t border-white/5 bg-[#091136]/50 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-3 mb-16">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -284,7 +284,7 @@ export default function Home() {
       </section>
 
       {/* 4. SECTOR SOLUTIONS TABS */}
-      <section className="py-20 bg-[#040815]/50 border-t border-b border-white/5 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-[#091136]/50 border-t border-b border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-3 mb-12">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Des Solutions Verticales Dédiées</h2>
@@ -340,17 +340,17 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                <div className="bg-[#0b101c] border border-white/5 rounded-xl p-5 space-y-4">
+                <div className="bg-[#0d1746] border border-white/5 rounded-xl p-5 space-y-4">
                   <div className="text-xs text-gray-400 font-mono flex justify-between">
                     <span>Modbus TCP Logger</span>
                     <span className="text-emerald-400">ACTIVE</span>
                   </div>
                   <div className="space-y-2">
-                    <div className="bg-[#121926] p-2.5 rounded text-[11px] font-mono text-cyan-400 flex justify-between">
+                    <div className="bg-[#1d2e7d] p-2.5 rounded text-[11px] font-mono text-cyan-400 flex justify-between">
                       <span>IP: 192.168.1.50:502</span>
                       <span>Val: 345.6 kWh</span>
                     </div>
-                    <div className="bg-[#121926] p-2.5 rounded text-[11px] font-mono text-cyan-400 flex justify-between">
+                    <div className="bg-[#1d2e7d] p-2.5 rounded text-[11px] font-mono text-cyan-400 flex justify-between">
                       <span>IP: 192.168.1.51:502</span>
                       <span>Temp: 64.2 °C</span>
                     </div>
@@ -380,17 +380,17 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                <div className="bg-[#0b101c] border border-white/5 rounded-xl p-5 space-y-4">
+                <div className="bg-[#0d1746] border border-white/5 rounded-xl p-5 space-y-4">
                   <div className="text-xs text-gray-400 font-mono">Prochains Rendez-vous</div>
                   <div className="space-y-2">
-                    <div className="bg-[#121926] p-2.5 rounded text-[11px] flex justify-between items-center text-gray-300">
+                    <div className="bg-[#1d2e7d] p-2.5 rounded text-[11px] flex justify-between items-center text-gray-300">
                       <div>
                         <span className="font-semibold block text-white">Fatima Zahra</span>
                         <span className="text-[10px] text-gray-500">Consultation Générale</span>
                       </div>
                       <span className="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-0.5 rounded font-mono">09:30</span>
                     </div>
-                    <div className="bg-[#121926] p-2.5 rounded text-[11px] flex justify-between items-center text-gray-300">
+                    <div className="bg-[#1d2e7d] p-2.5 rounded text-[11px] flex justify-between items-center text-gray-300">
                       <div>
                         <span className="font-semibold block text-white">Rachid Alami</span>
                         <span className="text-[10px] text-gray-500">Contrôle</span>
@@ -423,7 +423,7 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                <div className="bg-[#0b101c] border border-white/5 rounded-xl p-5 space-y-3">
+                <div className="bg-[#0d1746] border border-white/5 rounded-xl p-5 space-y-3">
                   <div className="text-xs text-gray-400 font-mono">Chambres Libres / Totales</div>
                   <div className="flex gap-2.5">
                     <div className="flex-1 bg-emerald-500/10 border border-emerald-500/20 rounded-lg p-3 text-center">
@@ -460,14 +460,14 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                <div className="bg-[#0b101c] border border-white/5 rounded-xl p-5 space-y-3">
+                <div className="bg-[#0d1746] border border-white/5 rounded-xl p-5 space-y-3">
                   <div className="text-xs text-gray-400 font-mono">Indicateurs de Maintenance</div>
                   <div className="grid grid-cols-2 gap-2">
-                    <div className="bg-[#121926] p-2.5 rounded text-center">
+                    <div className="bg-[#1d2e7d] p-2.5 rounded text-center">
                       <span className="block font-bold text-white font-mono">148h</span>
                       <span className="text-[9px] text-gray-500 uppercase">MTBF</span>
                     </div>
-                    <div className="bg-[#121926] p-2.5 rounded text-center">
+                    <div className="bg-[#1d2e7d] p-2.5 rounded text-center">
                       <span className="block font-bold text-rose-400 font-mono">2.4h</span>
                       <span className="text-[9px] text-gray-500 uppercase">MTTR</span>
                     </div>
@@ -528,7 +528,7 @@ export default function Home() {
       </section>
 
       {/* 6. TESTIMONIALS */}
-      <section className="py-20 bg-[#040815]/50 border-t border-b border-white/5 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-[#091136]/50 border-t border-b border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-3 mb-16">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Témoignages</h2>

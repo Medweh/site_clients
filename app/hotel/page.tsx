@@ -71,7 +71,7 @@ export default function HotelPage() {
         </div>
 
         <div className="space-y-3">
-          <div className="flex items-center justify-between p-3 rounded-lg bg-[#0e1626] border border-white/5">
+          <div className="flex items-center justify-between p-3 rounded-lg bg-[#142260] border border-white/5">
             <div className="flex items-center space-x-3">
               <span className="text-xs bg-cyan-500/20 text-cyan-400 px-2.5 py-1 rounded font-semibold font-mono">Chambre 101 (Suite Atlas)</span>
               <span className="text-xs text-gray-400">Jean Dupont (France)</span>
@@ -79,7 +79,7 @@ export default function HotelPage() {
             <span className="text-[10px] bg-rose-500/20 text-rose-400 px-2 py-0.5 rounded font-mono font-medium">Occupée (Check-out demain)</span>
           </div>
 
-          <div className="flex items-center justify-between p-3 rounded-lg bg-[#0e1626] border border-white/5">
+          <div className="flex items-center justify-between p-3 rounded-lg bg-[#142260] border border-white/5">
             <div className="flex items-center space-x-3">
               <span className="text-xs bg-cyan-500/20 text-cyan-400 px-2.5 py-1 rounded font-semibold font-mono">Chambre 102 (Standard)</span>
               <span className="text-xs text-gray-400">-</span>
@@ -87,7 +87,7 @@ export default function HotelPage() {
             <span className="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-mono font-medium">Disponible (Nettoyée)</span>
           </div>
 
-          <div className="flex items-center justify-between p-3 rounded-lg bg-[#0e1626] border border-white/5">
+          <div className="flex items-center justify-between p-3 rounded-lg bg-[#142260] border border-white/5">
             <div className="flex items-center space-x-3">
               <span className="text-xs bg-cyan-500/20 text-cyan-400 px-2.5 py-1 rounded font-semibold font-mono">Chambre 201 (Suite Royale)</span>
               <span className="text-xs text-gray-400">Sarah Alami (Maroc)</span>
