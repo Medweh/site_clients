@@ -527,52 +527,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. TESTIMONIALS */}
-      <section className="py-20 bg-[#091136]/50 border-t border-b border-white/5 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center space-y-3 mb-16">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Témoignages</h2>
-            <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
-              Ce que mes clients partenaires disent de nos collaborations.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Testimonial 1 */}
-            <div className="glass-panel rounded-2xl p-6 flex flex-col justify-between">
-              <p className="text-gray-300 italic text-xs leading-relaxed">
-                "Nous utilisions des feuilles Excel volumineuses pour planifier la maintenance préventive de notre usine. DigitalService nous a développé une GMAO sur mesure connectée à une application Android pour nos techniciens. Le taux de panne a chuté de 25%."
-              </p>
-              <div className="mt-6 border-t border-white/5 pt-4">
-                <span className="block font-bold text-white text-sm">Karim Bennani</span>
-                <span className="text-[10px] text-gray-500">Directeur Industriel, Energy-Maroc</span>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="glass-panel rounded-2xl p-6 flex flex-col justify-between">
-              <p className="text-gray-300 italic text-xs leading-relaxed">
-                "Grâce à l'application de cabinet médical conçue par DigitalService, la gestion des rendez-vous et le suivi des fiches patients sont fluides. Le système de notification automatique a réduit les absences de moitié. Un gain de temps inestimable."
-              </p>
-              <div className="mt-6 border-t border-white/5 pt-4">
-                <span className="block font-bold text-white text-sm">Dr. Sofia Mansouri</span>
-                <span className="text-[10px] text-gray-500">Pédiatre, Cabinet Médical Mansouri</span>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="glass-panel rounded-2xl p-6 flex flex-col justify-between">
-              <p className="text-gray-300 italic text-xs leading-relaxed">
-                "Notre taux de réservation direct a augmenté de 40% depuis la refonte de notre site et la mise en place du dashboard de gestion des check-ins/check-outs. Le système est d'une simplicité désarmante pour notre personnel."
-              </p>
-              <div className="mt-6 border-t border-white/5 pt-4">
-                <span className="block font-bold text-white text-sm">Adnane Kabbaj</span>
-                <span className="text-[10px] text-gray-500">Gérant, Riad & SPA Dar Kabbaj</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 7. FINAL CALL TO ACTION */}
       <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center space-y-8 relative">
