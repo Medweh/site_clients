@@ -1,46 +1,50 @@
 import Link from 'next/link'
-import { Award, BookOpen, Factory, Code, Heart, CheckCircle2, ArrowRight } from 'lucide-react'
+import { ShieldCheck, Cpu, Code, CheckCircle2, ArrowRight, Lightbulb, Users, BarChart3 } from 'lucide-react'
 
 export const metadata = {
   title: 'À Propos | DigitalService',
-  description: 'Découvrez l’expertise de DigitalService, cabinet de développement d’applications fondé par Mohamed Essahafi, ingénieur électromécanique, docteur et développeur full-stack.',
+  description: 'Découvrez DigitalService, cabinet spécialisé dans la conception d’applications métiers, le développement de sites web sur mesure et l’intégration de solutions de supervision industrielle pour les PME au Maroc.',
 }
 
 export default function AboutPage() {
   const experiences = [
     {
-      title: 'Ingénierie Électromécanique & Industrie',
-      description: 'Une solide formation et pratique de terrain en systèmes industriels, instrumentation de mesures physiques, électricité industrielle et gestion de parcs machines.',
-      icon: Factory,
+      title: 'Ingénierie & Supervision Industrielle',
+      description: 'Acquisition de données physiques, protocoles Modbus TCP/RTU, suivi énergétique et interfaçage avec vos automates et relais (type GE Multilin).',
+      icon: Cpu,
     },
     {
-      title: 'Doctorat & Enseignement Technique',
-      description: 'Docteur spécialisé en ingénierie énergétique et modélisation. Une rigueur scientifique appliquée à la structuration des données et à la résolution d’algorithmes complexes.',
-      icon: BookOpen,
-    },
-    {
-      title: 'Développement Logiciel Full-Stack',
-      description: 'Expertise moderne avec Next.js, TypeScript, Node.js et Supabase/PostgreSQL. Capable de construire des dashboards performants et sécurisés connectés à vos bases.',
+      title: 'Développement d’Applications Métiers',
+      description: 'Conception de plateformes SaaS sur mesure : GMAO, CRM, gestion de cabinets médicaux, réservation hôtelière et automatisation de processus.',
       icon: Code,
+    },
+    {
+      title: 'Architecture & Rigueur Logicielle',
+      description: 'Développement avec Next.js et TypeScript, hébergement edge sécurisé sur Vercel et bases de données SQL robustes sous Supabase (avec politiques RLS).',
+      icon: ShieldCheck,
     },
   ]
 
   const workflowSteps = [
     {
-      title: '1. Analyse & Immersion terrain',
-      description: 'J’analyse vos problématiques réelles en discutant directement avec vos techniciens, secrétaires ou gérants. Je ne me contente pas de suivre un cahier des charges abstrait.',
+      title: '1. Cadrage & Immersion Métier',
+      description: 'Nous analysons vos flux réels sur le terrain en discutant directement avec vos collaborateurs pour cerner vos points de friction.',
+      icon: Lightbulb,
     },
     {
-      title: '2. Prototypage rapide',
-      description: 'Je conçois rapidement une maquette visuelle et une base de données simplifiée pour valider l’expérience utilisateur et les flux opérationnels clés.',
+      title: '2. Prototypage & Conception',
+      description: 'Création rapide d’une maquette visuelle et d’une structure de base de données pour valider le parcours utilisateur.',
+      icon: Users,
     },
     {
-      title: '3. Développement rigoureux',
-      description: 'J’écris du code robuste, commenté et typé avec TypeScript, en intégrant des schémas de sécurité stricts (RLS) sur Supabase PostgreSQL.',
+      title: '3. Développement & Sécurisation',
+      description: 'Codage robuste, typé et sécurisé avec TypeScript, en intégrant des règles de restriction d’accès strictes aux bases de données.',
+      icon: Code,
     },
     {
-      title: '4. Tests & Déploiement',
-      description: 'Validation de l’application en conditions de travail réelles, puis mise en production optimisée sur Vercel avec suivi post-déploiement.',
+      title: '4. Déploiement & Suivi',
+      description: 'Mise en production optimisée sur Vercel avec chargement ultra-rapide et suivi post-déploiement pour assurer la stabilité.',
+      icon: BarChart3,
     },
   ]
 
@@ -53,62 +57,61 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
         <div className="lg:col-span-7 space-y-6">
           <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
-            <Award className="h-4 w-4 mr-1.5" />
-            <span>Profil Unique</span>
+            <span>Cabinet d'Ingénierie Logicielle</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gradient leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gradient leading-tight">
             DigitalService
           </h1>
           
-          <h2 className="text-base font-bold text-gray-300 font-mono">
-            Fondé par Mohamed Essahafi — Ingénieur Électromécanique, Docteur & Concepteur Logiciel
+          <h2 className="text-lg font-bold text-gray-300">
+            Des solutions informatiques et industrielles sur mesure pour digitaliser vos processus
           </h2>
 
           <p className="text-sm text-gray-400 leading-relaxed">
-            Ma double casquette d’ingénieur de terrain et de docteur en sciences physiques me permet d’avoir une compréhension immédiate de vos problématiques opérationnelles (qu’il s’agisse de maintenance d'usine, d'indexation énergétique ou de gestion logistique).
+            DigitalService combine une double expertise en ingénierie des systèmes physiques et en technologies logicielles modernes. Notre mission est de transformer les processus papier, les tableaux Excel saturés ou les données industrielles isolées en applications simples, connectées et hautement rentables pour votre entreprise.
           </p>
 
           <p className="text-sm text-gray-400 leading-relaxed">
-            Je traduis vos processus métiers concrets en applications logicielles réactives, fluides et faciles d’utilisation pour vos équipes, tout en assurant une structure de données ultra-sécurisée.
+            Nous intervenons sur toute la chaîne de valeur : du capteur physique (via protocole Modbus) jusqu'au tableau de bord cloud interactif accessible sur mobile et PC, en passant par des logiciels métiers dédiés (GMAO, dossiers médicaux, réservations).
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/10 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/10 transition-colors cursor-pointer"
             >
-              Me contacter pour un projet
+              Nous contacter pour un projet
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
         </div>
 
         <div className="lg:col-span-5">
-          {/* Visual Avatar Card mockup */}
-          <div className="glass-panel rounded-2xl p-6 border-white/5 space-y-6 relative overflow-hidden">
+          {/* Visual Avatar Card mockup representing corporate identity */}
+          <div className="glass-panel rounded-2xl p-6 border-white/5 space-y-6 relative overflow-hidden bg-[#0d1746]/60">
             <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl" />
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-2xl">
-                ME
+                DS
               </div>
               <div>
-                <h3 className="font-bold text-white text-lg">Mohamed Essahafi</h3>
-                <span className="text-xs text-cyan-400 font-mono">Consultant Indépendant</span>
+                <h3 className="font-bold text-white text-lg">DigitalService</h3>
+                <span className="text-xs text-cyan-400 font-mono">Solutions Digitales Premium</span>
               </div>
             </div>
             <div className="space-y-3 pt-2">
               <div className="flex items-center space-x-3 text-xs text-gray-300">
                 <CheckCircle2 className="h-4.5 w-4.5 text-cyan-500 shrink-0" />
-                <span>Expertise Next.js & Supabase</span>
+                <span>Expertise Next.js & bases Supabase/PostgreSQL</span>
               </div>
               <div className="flex items-center space-x-3 text-xs text-gray-300">
                 <CheckCircle2 className="h-4.5 w-4.5 text-cyan-500 shrink-0" />
-                <span>Rigueur de modélisation académique</span>
+                <span>Rigueur de modélisation de données complexes</span>
               </div>
               <div className="flex items-center space-x-3 text-xs text-gray-300">
                 <CheckCircle2 className="h-4.5 w-4.5 text-cyan-500 shrink-0" />
-                <span>Compréhension des équipements physiques</span>
+                <span>Supervision de protocoles et automates industriels</span>
               </div>
             </div>
           </div>
@@ -117,10 +120,10 @@ export default function AboutPage() {
 
       {/* Expertise Details */}
       <div className="space-y-8 mb-20">
-        <h2 className="text-2xl font-bold text-white text-center">Mes Piliers de Compétence</h2>
+        <h2 className="text-2xl font-bold text-white text-center">Nos Domaines de Compétence</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {experiences.map((exp, idx) => (
-            <div key={idx} className="glass-panel rounded-2xl p-6 space-y-4">
+            <div key={idx} className="glass-panel rounded-2xl p-6 space-y-4 bg-[#0d1746]/50">
               <div className="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center justify-center">
                 <exp.icon className="h-5 w-5" />
               </div>
@@ -133,10 +136,13 @@ export default function AboutPage() {
 
       {/* Work Methodology */}
       <div className="space-y-8">
-        <h2 className="text-2xl font-bold text-white text-center">Ma Méthodologie d’Accompagnement</h2>
+        <h2 className="text-2xl font-bold text-white text-center">Notre Méthodologie d’Accompagnement</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {workflowSteps.map((step, idx) => (
-            <div key={idx} className="glass-panel rounded-xl p-5 border-white/5 space-y-3">
+            <div key={idx} className="glass-panel rounded-xl p-5 border-white/5 space-y-3 bg-[#0d1746]/50">
+              <div className="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-2">
+                <step.icon className="h-4.5 w-4.5" />
+              </div>
               <h3 className="font-bold text-white text-sm">{step.title}</h3>
               <p className="text-gray-400 text-xs leading-relaxed">{step.description}</p>
             </div>
