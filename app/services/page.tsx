@@ -2,7 +2,7 @@ import ServiceCard from '@/components/service-card'
 import * as LucideIcons from 'lucide-react'
 
 export const metadata = {
-  title: 'Mes Services & Solutions Digitales',
+  title: 'Services & Solutions Digitales',
   description: 'Découvrez mes services de développement d’applications web, Android, PC et solutions industrielles sur-mesure pour PME, industries et professionnels de la santé.',
 }
 
@@ -129,7 +129,7 @@ export default function ServicesPage() {
 
       <div className="text-center space-y-4 mb-16">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gradient">
-          Mes Services & Solutions Digitales
+          Services & Solutions Digitales
         </h1>
         <p className="text-gray-400 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
           Je conçois des solutions sur-mesure pour digitaliser vos flux opérationnels, optimiser votre gestion et connecter vos outils industriels.
