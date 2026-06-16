@@ -273,7 +273,7 @@ export default function RealisationsPage() {
               </div>
               <div className="px-1">
                 <h4 className="font-bold text-white text-[11px]">Export Procès-Verbal (PV) de Délibérations</h4>
-                <p className="text-[9px] text-gray-500">Génération automatique au format officiel bilingue pour signature jury et archivage.</p>
+                <p className="text-[9px] text-gray-500">Génération automatique au format bilingue pour signature jury et archivage.</p>
               </div>
             </div>
           </div>
