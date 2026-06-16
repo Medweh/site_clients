@@ -62,11 +62,11 @@ export default function ContactPage() {
               <h3 className="font-bold text-white text-sm">Canaux Directs</h3>
               <div className="space-y-3">
                 <a
-                  href="mailto:mohamed.essahafi@um6p.ma"
+                  href="mailto:med.essahafi@gmail.com"
                   className="flex items-center space-x-3 text-xs text-gray-300 hover:text-cyan-400 transition-colors"
                 >
                   <Mail className="h-4.5 w-4.5 text-cyan-500" />
-                  <span>mohamed.essahafi@um6p.ma</span>
+                  <span>med.essahafi@gmail.com</span>
                 </a>
                 <a
                   href={whatsappUrl}

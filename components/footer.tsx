@@ -53,9 +53,9 @@ export default function Footer() {
               Ingénieur électromécanique, docteur et développeur full-stack. Concepteur d'applications métiers, supervision industrielle et solutions de gestion sur-mesure.
             </p>
             <div className="flex flex-col space-y-2.5 pt-2 text-sm text-gray-400">
-              <a href="mailto:mohamed.essahafi@um6p.ma" className="flex items-center space-x-2.5 hover:text-cyan-400 transition-colors">
+              <a href="mailto:med.essahafi@gmail.com" className="flex items-center space-x-2.5 hover:text-cyan-400 transition-colors">
                 <Mail className="h-4.5 w-4.5 text-cyan-500" />
-                <span>mohamed.essahafi@um6p.ma</span>
+                <span>med.essahafi@gmail.com</span>
               </a>
               <div className="flex items-center space-x-2.5">
                 <MapPin className="h-4.5 w-4.5 text-cyan-500" />

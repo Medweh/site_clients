@@ -94,7 +94,7 @@ begin
     new.id,
     new.email,
     case
-      when new.email = 'mohamed.essahafi@um6p.ma' then 'admin'
+      when new.email in ('mohamed.essahafi@um6p.ma', 'med.essahafi@gmail.com') then 'admin'
       else 'user'
     end,
     coalesce(new.raw_user_meta_data->>'full_name', '')
