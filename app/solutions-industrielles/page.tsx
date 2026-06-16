@@ -197,6 +197,21 @@ def read_sensors():
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">Cartographie schématique locale avec l'implantation des postes de distribution électrique PSF et des transformateurs.</p>
             </div>
           </div>
+
+          {/* Card 5: Curves and trends */}
+          <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white md:col-span-2">
+            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60 flex items-center justify-center">
+              <img
+                src="/images/relais_software_curves.png"
+                alt="Supervision des Courbes de Tendances"
+                className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
+              />
+            </div>
+            <div className="px-2 pb-1">
+              <h4 className="font-bold text-slate-900 text-sm">Supervision des Courbes de Tendances</h4>
+              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Tracé en direct et suivi historique des variations des mesures physiques (tensions, fréquences, puissances active/réactive) sous forme de courbes temporelles.</p>
+            </div>
+          </div>
         </div>
       </div>
 

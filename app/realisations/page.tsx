@@ -307,6 +307,21 @@ export default function RealisationsPage() {
                 <p className="text-[9px] text-slate-500">Distribution géographique schématique locale avec implantation PSF.</p>
               </div>
             </div>
+
+            {/* Card 5: Curves and trends */}
+            <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group bg-slate-50 border border-slate-200/80 sm:col-span-2">
+              <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden relative border border-slate-200/60">
+                <img
+                  src="/images/relais_software_curves.png"
+                  alt="Supervision Courbes de Tendances"
+                  className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
+                />
+              </div>
+              <div className="px-1">
+                <h4 className="font-bold text-slate-800 text-[11px]">Supervision des Courbes de Tendances</h4>
+                <p className="text-[9px] text-slate-500">Tracé en direct et suivi historique des variations des mesures (tensions, fréquences, puissances).</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
