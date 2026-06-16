@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { Settings, CheckSquare, Wrench, BarChart3, AlertTriangle, Smartphone, ShieldCheck, ArrowRight, FileDown } from 'lucide-react'
 
 export const metadata = {
-  title: 'Solution GMAO sur Mesure pour PME Industrielles',
-  description: 'Logiciel GMAO personnalisé au Maroc. Suivi d’équipements, interventions correctives, planning préventif, stocks de rechange et KPIs MTBF/MTTR.',
+  title: 'Maintenance 4.0 & Solution GMAO sur Mesure',
+  description: 'Logiciel GMAO et Maintenance 4.0 personnalisé au Maroc. Suivi d’équipements, interventions correctives, planning préventif, stocks de rechange et KPIs MTBF/MTTR.',
 }
 
 export default function GMAOPage() {
@@ -50,13 +50,13 @@ export default function GMAOPage() {
       <div className="text-center space-y-4 mb-16 max-w-3xl mx-auto">
         <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
           <ShieldCheck className="h-4 w-4 mr-1.5" />
-          <span>GMAO simplifiée pour PME et ateliers</span>
+          <span>Maintenance 4.0 & GMAO pour PME et ateliers</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gradient">
-          Une GMAO Intuitive et Sur Mesure
+          Maintenance 4.0 & GMAO sur Mesure
         </h1>
         <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-          Oubliez les logiciels de maintenance lourds et inadaptés. Je conçois des GMAO légères, réactives et alignées avec vos méthodes de travail sur le terrain.
+          Oubliez les logiciels de maintenance lourds et inadaptés. Je conçois des solutions GMAO & Maintenance 4.0 légères, connectées et alignées avec votre réalité terrain.
         </p>
       </div>
 

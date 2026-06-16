@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services',
     '/solutions-industrielles',
     '/gmao',
+    '/iot',
     '/cabinet-medical',
     '/hotel',
     '/realisations',

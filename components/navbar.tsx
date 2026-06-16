@@ -31,7 +31,8 @@ export default function Navbar() {
   const navigation = [
     { name: 'Services', href: '/services', icon: Code2 },
     { name: 'Solutions Industrielles', href: '/solutions-industrielles', icon: Cpu },
-    { name: 'GMAO', href: '/gmao', icon: CheckSquare },
+    { name: 'Maintenance 4.0 & GMAO', href: '/gmao', icon: CheckSquare },
+    { name: 'IoT', href: '/iot', icon: Cpu },
     { name: 'Cabinet Médical', href: '/cabinet-medical', icon: Activity },
     { name: 'Hôtel', href: '/hotel', icon: User },
     { name: 'Réalisations', href: '/realisations', icon: Code2 },

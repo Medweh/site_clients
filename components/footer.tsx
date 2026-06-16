@@ -17,13 +17,15 @@ export default function Footer() {
     { name: 'Applications Bureau PC', href: '/services' },
     { name: 'Applications Android', href: '/services' },
     { name: 'Supervision Industrielle', href: '/solutions-industrielles' },
-    { name: 'Gestion GMAO', href: '/gmao' },
+    { name: 'Maintenance 4.0 & GMAO', href: '/gmao' },
+    { name: 'IoT & Objets Connectés', href: '/iot' },
   ]
 
   const solutions = [
     { name: 'Cabinet Médical', href: '/cabinet-medical' },
     { name: 'Gestion Hôtelière', href: '/hotel' },
     { name: 'Supervision Modbus', href: '/solutions-industrielles' },
+    { name: 'IoT Sport / Santé', href: '/iot' },
     { name: 'Gestion Stocks & Maintenance', href: '/gmao' },
   ]
 
