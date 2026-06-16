@@ -1,0 +1,71 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import WhatsappBubble from "@/components/whatsapp-bubble";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "DigitalService | Ingénierie & Solutions Digitales Premium",
+    template: "%s | DigitalService"
+  },
+  description: "Ingénieur développeur spécialisé en applications métiers, supervision industrielle et solutions digitales sur mesure pour PME, cabinets, hôtels et sites industriels au Maroc.",
+  keywords: [
+    "développement application web Maroc",
+    "développement logiciel industriel Maroc",
+    "GMAO PME Maroc",
+    "application gestion cabinet médical Maroc",
+    "application gestion hôtel Maroc",
+    "supervision industrielle Maroc",
+    "DigitalService",
+    "Ingénieur développeur",
+    "Modbus TCP",
+    "Dashboard industriel",
+    "Next.js Maroc"
+  ],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "DigitalService | Ingénierie & Solutions Digitales Premium",
+    description: "Je transforme vos problèmes métiers en applications simples, professionnelles et rentables.",
+    url: "/",
+    siteName: "DigitalService Portfolio",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="fr"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+    >
+      <body className="min-h-full flex flex-col bg-[#030712] text-gray-100 selection:bg-cyan-500/30 selection:text-white">
+        <Navbar />
+        <main className="flex-grow pt-20">
+          {children}
+        </main>
+        <Footer />
+        <WhatsappBubble />
+      </body>
+    </html>
+  );
+}
