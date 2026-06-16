@@ -112,27 +112,40 @@ export default function IotPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="lg:col-span-7 flex flex-col gap-4">
               <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
-                <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
+                <div className="aspect-[21/9] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
                   <img
-                    src="/images/training_monitor_1.png"
-                    alt="Training Monitor - État initial et appairage"
+                    src="/images/home_trainer_setup.png"
+                    alt="Configuration physique du Home Trainer connecté"
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
                   />
                 </div>
-                <h4 className="font-bold text-white text-[11px] px-1">Connexion des Capteurs & Initialisation</h4>
+                <h4 className="font-bold text-white text-[11px] px-1">Installation Physique & Capteurs Connectés</h4>
               </div>
 
-              <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
-                <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
-                  <img
-                    src="/images/training_monitor_2.png"
-                    alt="Training Monitor - Session active et puissance estimée"
-                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
-                  />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
+                  <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
+                    <img
+                      src="/images/training_monitor_1.png"
+                      alt="Training Monitor - État initial et appairage"
+                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
+                    />
+                  </div>
+                  <h4 className="font-bold text-white text-[11px] px-1">Connexion des Capteurs & Initialisation</h4>
                 </div>
-                <h4 className="font-bold text-white text-[11px] px-1">Séance Active & Analyse de Puissance</h4>
+
+                <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
+                  <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
+                    <img
+                      src="/images/training_monitor_2.png"
+                      alt="Training Monitor - Session active et puissance estimée"
+                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
+                    />
+                  </div>
+                  <h4 className="font-bold text-white text-[11px] px-1">Séance Active & Analyse de Puissance</h4>
+                </div>
               </div>
             </div>
           </div>
