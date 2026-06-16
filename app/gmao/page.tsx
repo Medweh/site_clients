@@ -210,14 +210,14 @@ export default function GMAOPage() {
       <div className="glass-panel rounded-2xl p-8 max-w-4xl mx-auto text-center bg-gradient-to-tr from-indigo-950/20 to-blue-950/10 border-indigo-500/20 space-y-6">
         <h2 className="text-2xl font-bold text-white">Prêt à fiabiliser vos équipements industriels ?</h2>
         <p className="text-sm text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Nous pouvons planifier une courte démonstration à partir d'un prototype GMAO de base pour estimer les modules nécessaires à votre activité (planning, stocks, code-barres, etc.).
+          Nous pouvons planifier une consultation technique à partir d'un prototype GMAO de base pour estimer les modules nécessaires à votre activité (planning, stocks, code-barres, etc.).
         </p>
         <div>
           <Link
             href="/contact?service=gmao"
             className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 transition-all duration-200"
           >
-            Demander une démonstration GMAO
+            Demander une consultation GMAO
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>

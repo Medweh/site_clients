@@ -583,7 +583,7 @@ export default function Home() {
         </h2>
 
         <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Planifions ensemble une démonstration ou discutons de votre cahier des charges pour concevoir l'application qui vous fera gagner du temps et de l'argent.
+          Planifions ensemble une consultation ou discutons de votre cahier des charges pour concevoir l'application qui vous fera gagner du temps et de l'argent.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
