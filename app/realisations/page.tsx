@@ -178,7 +178,7 @@ export default function RealisationsPage() {
           </div>
 
           {/* Screenshot Gallery grid */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
               <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
@@ -235,7 +235,35 @@ export default function RealisationsPage() {
               </div>
             </div>
 
-            <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group sm:col-span-2">
+            <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
+              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+                <img
+                  src="/images/notes_consolidation.png"
+                  alt="Tableau de consolidation"
+                  className="max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-350"
+                />
+              </div>
+              <div className="px-1">
+                <h4 className="font-bold text-white text-[11px]">Tableau de Consolidation</h4>
+                <p className="text-[9px] text-gray-500">Moyennes pondérées et progression globales des étudiants par matière.</p>
+              </div>
+            </div>
+
+            <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group">
+              <div className="aspect-[16/10] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
+                <img
+                  src="/images/notes_structure.png"
+                  alt="Gestion des structures et coefficients"
+                  className="max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-350"
+                />
+              </div>
+              <div className="px-1">
+                <h4 className="font-bold text-white text-[11px]">Coefficients & Modules</h4>
+                <p className="text-[9px] text-gray-500">Configuration de l'arborescence des unités et des sous-savoirs.</p>
+              </div>
+            </div>
+
+            <div className="glass-panel rounded-xl overflow-hidden border-white/5 p-2 space-y-2 group sm:col-span-3">
               <div className="aspect-[16/6] bg-[#0c1220] rounded-lg overflow-hidden relative border border-white/5 flex items-center justify-center">
                 <img
                   src="/images/notes_pv_pdf.png"
