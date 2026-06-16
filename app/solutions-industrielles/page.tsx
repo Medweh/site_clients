@@ -155,7 +155,7 @@ def read_sensors():
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 space-y-3 p-3 group">
             <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
-                src="/images/relais_f650_4.png"
+                src="/images/morocco_industrial_map.png"
                 alt="Tableau de Registres Modbus Relais F650"
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
               />

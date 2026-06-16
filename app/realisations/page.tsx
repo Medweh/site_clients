@@ -411,7 +411,7 @@ export default function RealisationsPage() {
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
               <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
                 <img
-                  src="/images/relais_f650_4.png"
+                  src="/images/morocco_industrial_map.png"
                   alt="Mappage Modbus Relais F650"
                   className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
                 />
