@@ -123,11 +123,11 @@ def read_sensors():
         </pre>
       </div>
 
-      {/* Real Case Study: OCP Benguerir Relais F650 */}
+      {/* Real Case Study: Relais F650 */}
       <div className="space-y-8 mb-20 max-w-5xl mx-auto">
         <div className="text-center space-y-3">
           <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
-            <span>Cas Réel - OCP Benguerir (PSF)</span>
+            <span>Cas Réel - Poste Électrique PSF</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
             Supervision & Acquisition Relais F650
@@ -155,14 +155,14 @@ def read_sensors():
           <div className="glass-panel rounded-xl overflow-hidden border-white/5 space-y-3 p-3 group">
             <div className="aspect-[16/9] bg-[#0d1746] rounded-lg overflow-hidden relative border border-white/5">
               <img
-                src="/images/morocco_industrial_map.png"
-                alt="Tableau de Registres Modbus Relais F650"
+                src="/images/industrial_5ha_layout_map.png"
+                alt="Plan 5ha - Postes Électriques PSF"
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
               />
             </div>
             <div className="px-2 pb-1">
-              <h4 className="font-bold text-white text-sm">Tableau d'Acquisition de Registres</h4>
-              <p className="text-xs text-gray-400 mt-1 leading-relaxed">Mappage d'adresses Modbus (3810, 3850, 3882...) et récupération des puissances active/réactive/apparente.</p>
+              <h4 className="font-bold text-white text-sm">Plan de Zone — 5 Hectares (Postes PSF)</h4>
+              <p className="text-xs text-gray-400 mt-1 leading-relaxed">Cartographie schématique locale avec l'implantation des postes de distribution électrique PSF et des transformateurs.</p>
             </div>
           </div>
 

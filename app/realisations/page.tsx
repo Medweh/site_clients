@@ -3,7 +3,7 @@ import { CheckCircle2, FileDown, Eye, HelpCircle, ArrowRight, BookOpen, Factory,
 
 export const metadata = {
   title: 'Mes Réalisations & Cas d’Usage Industriels',
-  description: 'Explorez mes projets réels et prototypes d’ingénierie et de développement : Suivi Pédagogique BTS, GMAO Pro, Supervision Modbus Relais F650 OCP Benguerir.',
+  description: 'Explorez mes projets réels et prototypes d’ingénierie et de développement : Suivi Pédagogique BTS, GMAO Pro, Supervision Modbus Relais F650 (Poste PSF).',
 }
 
 export default function RealisationsPage() {
@@ -360,7 +360,7 @@ export default function RealisationsPage() {
               <span>Secteur : Supervision Industrielle / Réseau</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-              Supervision Modbus TCP — Relais F650 (OCP Benguerir PSF)
+              Supervision Modbus TCP — Relais F650 (Poste PSF)
             </h2>
           </div>
           
@@ -383,7 +383,7 @@ export default function RealisationsPage() {
               </ul>
             </div>
             <div className="flex flex-wrap gap-1.5">
-              {['Modbus TCP', 'Relais F650', 'Python Modbus', 'IHM locale', 'OCP Benguerir'].map((tag) => (
+              {['Modbus TCP', 'Relais F650', 'Python Modbus', 'IHM locale', 'Poste PSF'].map((tag) => (
                 <span key={tag} className="text-[10px] bg-[#192556] text-gray-400 px-2 py-1 rounded border border-white/5 font-mono">
                   {tag}
                 </span>
@@ -411,12 +411,12 @@ export default function RealisationsPage() {
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group">
               <div className="aspect-[16/10] bg-[#111c4e] rounded-lg overflow-hidden relative border border-white/5">
                 <img
-                  src="/images/morocco_industrial_map.png"
-                  alt="Mappage Modbus Relais F650"
+                  src="/images/industrial_5ha_layout_map.png"
+                  alt="Plan 5ha - Postes Électriques PSF"
                   className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
                 />
               </div>
-              <h4 className="font-bold text-white text-[11px] px-1">Registres Modbus Actifs</h4>
+              <h4 className="font-bold text-white text-[11px] px-1">Plan de Zone — 5 Hectares (Postes PSF)</h4>
             </div>
           </div>
         </div>
