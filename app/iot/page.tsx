@@ -100,6 +100,7 @@ export default function IotPage() {
                   <li>• **Appairage Bluetooth & ANT+** : Scanner sans fil et connexion instantanée de capteurs d'entraînement.</li>
                   <li>• **Estimation de puissance** : Formules calibrées sur la courbe de résistance physique du home trainer.</li>
                   <li>• **Calcul de charge (TSS/IF/Zones)** : Analyse de la fatigue accumulée et découpage en zones de puissance (Z1 à Z5) et Watts/kg.</li>
+                  <li>• **Coaching & Amélioration de Performance** : Conseils personnalisés en temps réel (cadence optimale, zones d'effort) pour une progression physique sur-mesure.</li>
                   <li>• **Mode Simulation** : Console intégrée permettant de tester et valider le logiciel sans équipements physiques.</li>
                 </ul>
               </div>

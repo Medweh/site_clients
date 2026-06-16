@@ -451,6 +451,7 @@ export default function RealisationsPage() {
                 <li>• Scanner et connexion de capteurs Bluetooth / ANT+.</li>
                 <li>• Algorithme d'estimation de puissance instantanée en Watts (W).</li>
                 <li>• Calcul des indicateurs d'effort : IF (Intensity Factor), TSS, Zones de Puissance (Z1 à Z5) et ratio W/kg.</li>
+                <li>• Coaching & Amélioration de Performance : Conseils personnalisés en temps réel (cadence optimale, zones d'effort) pour une progression physique sur-mesure.</li>
                 <li>• Mode simulation intégré pour valider les séances d'entraînement sans capteurs physiques.</li>
               </ul>
             </div>
