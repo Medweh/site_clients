@@ -200,6 +200,53 @@ def read_sensors():
         </div>
       </div>
 
+      {/* Real Case Study 2: Station de Dessalement */}
+      <div className="space-y-8 mb-20 max-w-5xl mx-auto">
+        <div className="text-center space-y-3">
+          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-[#0F766E]/10 border border-[#0F766E]/20 text-[#0F766E] text-xs font-semibold uppercase tracking-wider">
+            <span>Cas Réel - Station de Dessalement</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            IHM Supervision & Optimisation — Station de Dessalement
+          </h2>
+          <p className="text-slate-600 text-sm max-w-2xl mx-auto leading-relaxed">
+            Interface d'acquisition de données physiques et de monitoring en temps réel pour l'optimisation des flux d'eau (perméat, concentrat), le suivi d'efficacité de dessalement et les pressions hydrauliques.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Card 1: Dashboard Monitoring */}
+          <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
+            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
+              <img
+                src="/images/dessalement_dashboard.png"
+                alt="Tableau de Bord Numérique Temps Réel"
+                className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
+              />
+            </div>
+            <div className="px-2 pb-1">
+              <h4 className="font-bold text-slate-900 text-sm">Tableau de Bord de Monitoring en Temps Réel</h4>
+              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Visualisation des flux (débits entrée/sortie), de la salinité du perméat, de la conductivité, et calcul des KPIs de performance (taux de rejet, puissance consommée).</p>
+            </div>
+          </div>
+
+          {/* Card 2: Control and Surveillance */}
+          <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
+            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
+              <img
+                src="/images/dessalement_control.png"
+                alt="Contrôle & Surveillance des Courbes"
+                className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
+              />
+            </div>
+            <div className="px-2 pb-1">
+              <h4 className="font-bold text-slate-900 text-sm">Contrôle Graphique & Surveillance</h4>
+              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Historisation et tracé dynamique des courbes temporelles (salinité, efficacité de dessalement, débit concentrat et pressions hydrauliques entrée/sortie).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* CTA Box */}
       <div className="glass-panel rounded-2xl p-8 max-w-4xl mx-auto text-center bg-gradient-to-tr from-[#002FA7]/5 to-[#D95D39]/5 border-[#002FA7]/10 space-y-6 bg-white">
         <h2 className="text-2xl font-bold text-slate-900">Besoin d'interfacer vos machines ou de suivre vos consommations ?</h2>
