@@ -248,17 +248,52 @@ export default function RealisationsPage() {
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Card 1: Hardware Relay */}
+            <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group bg-slate-50 border border-slate-200/80">
+              <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden relative border border-slate-200/60 flex items-center justify-center">
+                <img
+                  src="/images/relais_multilin_f650.png"
+                  alt="Relais GE Multilin F650"
+                  className="max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-350"
+                />
+              </div>
+              <div className="px-1">
+                <h4 className="font-bold text-slate-800 text-[11px]">Relais GE Multilin F650</h4>
+                <p className="text-[9px] text-slate-500">Relais de protection et contrôleur de baie connecté via Modbus TCP.</p>
+              </div>
+            </div>
+
+            {/* Card 2: Registers table */}
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group bg-slate-50 border border-slate-200/80">
               <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden relative border border-slate-200/60">
                 <img
-                  src="/images/relais_f650_3.jpg"
-                  alt="Relais F650 supervision"
-                  className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
+                  src="/images/relais_software_parameters.png"
+                  alt="Tableau de Registres Modbus"
+                  className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
                 />
               </div>
-              <h4 className="font-bold text-slate-800 text-[11px] px-1 font-mono">Tracé de Mesures (Tendances)</h4>
+              <div className="px-1">
+                <h4 className="font-bold text-slate-800 text-[11px]">Tableau de Registres Modbus</h4>
+                <p className="text-[9px] text-slate-500">Lecture en temps réel des adresses holding registers de courant et tension.</p>
+              </div>
             </div>
 
+            {/* Card 3: Supervision panel */}
+            <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group bg-slate-50 border border-slate-200/80">
+              <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden relative border border-slate-200/60">
+                <img
+                  src="/images/relais_software_supervision.png"
+                  alt="Portail Supervision Numérique"
+                  className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
+                />
+              </div>
+              <div className="px-1">
+                <h4 className="font-bold text-slate-800 text-[11px]">Supervision Numérique</h4>
+                <p className="text-[9px] text-slate-500">Visualisation synthétique des courants, tensions et puissances actives.</p>
+              </div>
+            </div>
+
+            {/* Card 4: Plan 5ha */}
             <div className="glass-panel rounded-xl overflow-hidden p-2 space-y-2 group bg-slate-50 border border-slate-200/80">
               <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden relative border border-slate-200/60">
                 <img
@@ -267,7 +302,10 @@ export default function RealisationsPage() {
                   className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
                 />
               </div>
-              <h4 className="font-bold text-slate-800 text-[11px] px-1 font-mono">Plan de Zone — 5 Hectares (Postes PSF)</h4>
+              <div className="px-1">
+                <h4 className="font-bold text-slate-800 text-[11px]">Plan de Zone — 5 Hectares (Postes PSF)</h4>
+                <p className="text-[9px] text-slate-500">Distribution géographique schématique locale avec implantation PSF.</p>
+              </div>
             </div>
           </div>
         </div>

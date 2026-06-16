@@ -138,59 +138,63 @@ def read_sensors():
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Card 1: Hardware Relay */}
           <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
-            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
+            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60 flex items-center justify-center">
               <img
-                src="/images/relais_f650_3.jpg"
-                alt="Supervision Courbes Relais F650"
-                className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
+                src="/images/relais_multilin_f650.png"
+                alt="Relais de Protection GE Multilin F650"
+                className="max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-350"
               />
             </div>
             <div className="px-2 pb-1">
-              <h4 className="font-bold text-slate-900 text-sm">Visualisation Graphique (Tendances)</h4>
-              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Tracé en temps réel des courbes de courant (Ia, Ib, Ic) et tensions primaires (Va, Vb, Vc).</p>
+              <h4 className="font-bold text-slate-900 text-sm">Relais de Protection GE Multilin F650</h4>
+              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Contrôleur de baie industriel supportant l'acquisition de mesures de courant et tension via Modbus TCP.</p>
             </div>
           </div>
 
+          {/* Card 2: Parameters table */}
+          <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
+            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
+              <img
+                src="/images/relais_software_parameters.png"
+                alt="Table de Registres Modbus (Lectures)"
+                className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
+              />
+            </div>
+            <div className="px-2 pb-1">
+              <h4 className="font-bold text-slate-900 text-sm">Table de Registres Modbus (Lectures)</h4>
+              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Configuration et lecture en direct des registres holding (adresses 3810 à 3894) pour les mesures primaires.</p>
+            </div>
+          </div>
+
+          {/* Card 3: Supervision panel */}
+          <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
+            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
+              <img
+                src="/images/relais_software_supervision.png"
+                alt="Portail de Supervision Numérique"
+                className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-350"
+              />
+            </div>
+            <div className="px-2 pb-1">
+              <h4 className="font-bold text-slate-900 text-sm">Portail de Supervision Numérique</h4>
+              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Visualisation synthétique des mesures acquises en ampères et volts sous forme de cartes d'état avec diagnostic.</p>
+            </div>
+          </div>
+
+          {/* Card 4: Plan 5ha */}
           <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
             <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
               <img
                 src="/images/industrial_5ha_layout_map.png"
-                alt="Plan 5ha - Postes Électriques PSF"
+                alt="Plan de Zone — 5 Hectares (Postes PSF)"
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
               />
             </div>
             <div className="px-2 pb-1">
               <h4 className="font-bold text-slate-900 text-sm">Plan de Zone — 5 Hectares (Postes PSF)</h4>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">Cartographie schématique locale avec l'implantation des postes de distribution électrique PSF et des transformateurs.</p>
-            </div>
-          </div>
-
-          <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
-            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
-              <img
-                src="/images/relais_f650_1.jpg"
-                alt="Lecture Paramètres Relais F650"
-                className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
-              />
-            </div>
-            <div className="px-2 pb-1">
-              <h4 className="font-bold text-slate-900 text-sm">Menu Diagnostics & Connexions</h4>
-              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Configuration des paramètres de connexion (IP Relais, Port, Unit ID, Timeout) pour acquisition.</p>
-            </div>
-          </div>
-
-          <div className="glass-panel rounded-xl overflow-hidden space-y-3 p-3 group bg-white">
-            <div className="aspect-[16/9] bg-slate-50 rounded-lg overflow-hidden relative border border-slate-200/60">
-              <img
-                src="/images/relais_f650_2.jpg"
-                alt="Suivi Paramètres en temps réel"
-                className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-350"
-              />
-            </div>
-            <div className="px-2 pb-1">
-              <h4 className="font-bold text-slate-900 text-sm">Supervision Globale & Puissances</h4>
-              <p className="text-xs text-slate-600 mt-1 leading-relaxed">Calcul et surveillance en direct de la tension auxiliaire, des harmoniques et du facteur de puissance.</p>
             </div>
           </div>
         </div>
