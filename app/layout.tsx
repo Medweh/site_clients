@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "DigitalService | Ingénierie & Solutions Digitales Premium",
     template: "%s | DigitalService"
   },
-  description: "Ingénieur développeur spécialisé en applications métiers, supervision industrielle et solutions digitales sur mesure pour PME, cabinets, hôtels et sites industriels au Maroc.",
+  description: "Ingénieur développeur spécialisé en applications métiers, supervision industrielle et solutions digitales sur mesure au Maroc. مهندس مطور متخصص في تطوير التطبيقات المهنية، المراقبة الصناعية والحلول الرقمية بالمغرب.",
   keywords: [
     "développement application web Maroc",
     "développement logiciel industriel Maroc",
@@ -32,7 +32,15 @@ export const metadata: Metadata = {
     "Ingénieur développeur",
     "Modbus TCP",
     "Dashboard industriel",
-    "Next.js Maroc"
+    "Next.js Maroc",
+    "تطوير تطبيقات الويب المغرب",
+    "برمجة الأنظمة الصناعية المغرب",
+    "نظام إدارة الصيانة GMAO المغرب",
+    "تطبيق عيادة طبية المغرب",
+    "تطبيق إدارة الفنادق المغرب",
+    "المراقبة الصناعية المغرب",
+    "برمجيات مخصصة للمغرب",
+    "لوحة تحكم صناعية"
   ],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   alternates: {

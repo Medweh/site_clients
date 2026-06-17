@@ -95,52 +95,17 @@ export default function Home() {
               <div className="text-[10px] text-slate-500 font-mono tracking-wider">Supervision & Dashboard Métier v2.1</div>
               <div className="w-10" />
             </div>
-            {/* Mock Dashboard Area */}
-            <div className="flex-1 p-4 md:p-6 grid grid-cols-3 gap-4 font-sans text-xs">
-              <div className="col-span-3 md:col-span-1 bg-slate-50/50 rounded-lg border border-slate-200/80 p-4 space-y-4">
-                <div className="text-slate-500 uppercase text-[10px] tracking-wider font-semibold">Statut Équipements</div>
-                <div className="flex justify-between items-center bg-[#002FA7]/5 p-2.5 rounded border border-[#002FA7]/20 text-[#002FA7]">
-                  <span className="font-medium">Pompe Principale</span>
-                  <span className="text-[10px] bg-[#002FA7]/10 px-2 py-0.5 rounded font-mono">ON / 1450 RPM</span>
-                </div>
-                <div className="flex justify-between items-center bg-[#D95D39]/5 p-2.5 rounded border border-[#D95D39]/20 text-[#D95D39]">
-                  <span className="font-medium">Vanne D'alimentation</span>
-                  <span className="text-[10px] bg-[#D95D39]/10 px-2 py-0.5 rounded font-mono">OUVERTE (92%)</span>
-                </div>
-                <div className="flex justify-between items-center bg-slate-100 p-2.5 rounded border border-slate-200 text-slate-500">
-                  <span className="font-medium">Compresseur Secondaire</span>
-                  <span className="text-[10px] bg-slate-200 px-2 py-0.5 rounded font-mono">VEILLE</span>
-                </div>
-              </div>
-              <div className="col-span-3 md:col-span-2 bg-slate-50/50 rounded-lg border border-slate-200/80 p-4 flex flex-col justify-between">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-slate-500 uppercase text-[10px] tracking-wider font-semibold">Indicateurs de Performance (KPI)</span>
-                  <span className="text-[#D95D39] text-[10px] bg-[#D95D39]/10 px-2 py-0.5 rounded font-mono flex items-center font-semibold">
-                    <TrendingUp className="h-3 w-3 mr-1" /> OEE: 94.2%
-                  </span>
-                </div>
-                {/* Visual Fake chart */}
-                <div className="h-28 md:h-36 flex items-end space-x-1.5 md:space-x-3 pt-2">
-                  <div className="w-full bg-[#002FA7]/10 hover:bg-[#002FA7]/20 transition-colors h-[40%] rounded-t" />
-                  <div className="w-full bg-[#002FA7]/10 hover:bg-[#002FA7]/20 transition-colors h-[60%] rounded-t" />
-                  <div className="w-full bg-[#002FA7]/10 hover:bg-[#002FA7]/20 transition-colors h-[50%] rounded-t" />
-                  <div className="w-full bg-[#002FA7]/20 hover:bg-[#002FA7]/30 transition-colors h-[80%] rounded-t" />
-                  <div className="w-full bg-gradient-to-t from-[#002FA7] to-[#D95D39] h-[95%] rounded-t relative">
-                    <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-mono text-white bg-[#002FA7] px-1 py-0.5 rounded border border-[#002FA7]/30">Max</span>
-                  </div>
-                  <div className="w-full bg-[#002FA7]/10 hover:bg-[#002FA7]/20 transition-colors h-[75%] rounded-t" />
-                  <div className="w-full bg-[#002FA7]/10 hover:bg-[#002FA7]/20 transition-colors h-[85%] rounded-t" />
-                </div>
-                <div className="flex justify-between text-[9px] text-slate-400 font-mono mt-3">
-                  <span>08:00</span>
-                  <span>10:00</span>
-                  <span>12:00</span>
-                  <span>14:00</span>
-                  <span>16:00 (Actuel)</span>
-                  <span>18:00</span>
-                  <span>20:00</span>
-                </div>
-              </div>
+            {/* Demo Video Area */}
+            <div className="flex-1 bg-slate-950 relative flex items-center justify-center overflow-hidden">
+              <video
+                src="/lance.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                className="w-full h-full object-cover md:object-contain"
+              />
             </div>
           </div>
         </div>
