@@ -52,15 +52,24 @@ export default function Home() {
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-gradient">
             Applications métiers, sites web et solutions industrielles sur mesure
+            <span className="block mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-normal text-slate-900" dir="rtl">
+              تطبيقات مهنية، مواقع ويب وحلول صناعية مخصصة
+            </span>
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Je développe des applications web, Android et PC pour digitaliser vos processus, gérer vos données et connecter vos équipements industriels.
-          </p>
+          <div className="space-y-3 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+              Je développe des applications web, Android et PC pour digitaliser vos processus, gérer vos données et connecter vos équipements industriels.
+            </p>
+            <p className="text-base sm:text-lg text-slate-500 leading-relaxed font-medium" dir="rtl">
+              تطوير تطبيقات الويب، أندرويد والحاسوب لرقمنة عملياتكم، إدارة بياناتكم وربط معداتكم الصناعية.
+            </p>
+          </div>
 
-          <p className="text-sm text-[#D95D39] font-semibold tracking-wide">
-            "Je transforme vos problèmes métiers en applications simples, professionnelles et rentables."
-          </p>
+          <div className="text-sm text-[#D95D39] font-semibold tracking-wide space-y-1">
+            <p>"Je transforme vos problèmes métiers en applications simples, professionnelles et rentables."</p>
+            <p dir="rtl" className="text-xs font-medium text-[#D95D39]/80">"نحول مشاكلكم المهنية إلى تطبيقات بسيطة، احترافية ومربحة."</p>
+          </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link
