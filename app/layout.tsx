@@ -40,7 +40,17 @@ export const metadata: Metadata = {
     "تطبيق إدارة الفنادق المغرب",
     "المراقبة الصناعية المغرب",
     "برمجيات مخصصة للمغرب",
-    "لوحة تحكم صناعية"
+    "لوحة تحكم صناعية",
+    "custom software development Morocco",
+    "industrial software development Morocco",
+    "GMAO software Morocco",
+    "CMMS maintenance software Morocco",
+    "industrial supervision system Morocco",
+    "SCADA Modbus TCP Morocco",
+    "custom web applications Morocco",
+    "IoT developer Morocco",
+    "Modbus TCP dashboard",
+    "industrial data acquisition"
   ],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   alternates: {
